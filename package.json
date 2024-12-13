@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "build": "echo 'Nenhum build necessário'",
-    "build:azure": "echo 'Nenhum build necessário'"
-  }
-}
