@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "echo 'Build completo (sem framework)'",
-    "build:azure": "echo 'Build completo (sem framework)'"
+    "build": "echo 'Nenhum build necessário'",
+    "build:azure": "echo 'Nenhum build necessário'"
   }
 }
