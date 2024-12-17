@@ -10,6 +10,10 @@
     text-align: center; /* Centraliza o conteúdo dentro do card */
 }
 
+.features .col {
+    margin-bottom: 20px; /* Espaçamento vertical */
+}
+
 /* Responsividade para ícones maiores em telas maiores */
 @media (min-width: 768px) {
   .feature-icon {
