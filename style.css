@@ -1,6 +1,19 @@
 .hero {
     background-color: #f8f9fa;
 }
+.hero .container {
+    display: flex;
+    flex-direction: column; /* Itens empilhados verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente (opcional, mas bom para headers altos) */
+    text-align: center; /* Centraliza o texto dentro dos elementos filhos */
+    min-height: 200px; /* Garante um altura mínima para o header, ajusta conforme necessário */
+}
+
+.hero .row { /* Remove a necessidade do align-items-center na row */
+    align-items: initial; 
+    width: 100%; /* Ocupar toda a largura */
+}
 
 .feature-icon {
     font-size: 2em; /* Tamanho reduzido para melhor ajuste nos cards */
@@ -26,8 +39,8 @@
 }
 }
 .logo {
-    max-width: 50px; /* Defina um tamanho máximo para a logo */
-    height: auto;    /* Mantém a proporção da imagem */
-    display: block; /* Centraliza horizontalmente a imagem */
-    margin: 0 auto 20px; /* Margem inferior para separar da tag h1 */
+    max-width: 30px;
+    height: auto;
+    display: block; /* Essencial para centralizar a imagem sozinha */
+    margin: 0 auto 20px;
 }
