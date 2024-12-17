@@ -1,0 +1,23 @@
+.hero {
+    background-color: #f8f9fa;
+}
+
+.feature-icon {
+    font-size: 2em; /* Tamanho reduzido para melhor ajuste nos cards */
+}
+
+.card {
+    text-align: center; /* Centraliza o conteúdo dentro do card */
+}
+
+/* Responsividade para ícones maiores em telas maiores */
+@media (min-width: 768px) {
+  .feature-icon {
+    font-size: 3em;
+  }
+}
+
+.btn.disabled:hover {
+    background-color: #007bff; /* Mantém a cor original quando desabilitado */
+}
+}
