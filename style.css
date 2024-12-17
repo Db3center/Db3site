@@ -21,3 +21,9 @@
     background-color: #007bff; /* Mantém a cor original quando desabilitado */
 }
 }
+.logo {
+    max-width: 200px; /* Defina um tamanho máximo para a logo */
+    height: auto;    /* Mantém a proporção da imagem */
+    display: block; /* Centraliza horizontalmente a imagem */
+    margin: 0 auto 20px; /* Margem inferior para separar da tag h1 */
+}
