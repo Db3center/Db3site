@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    background-color: #293241;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.btn-primary {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+.features {
+    padding: 50px 0;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    font-size: 1rem;
+    line-height: 1.6;
+}
