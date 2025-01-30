@@ -21,3 +21,11 @@
     background-color: #007bff; /* Mantém a cor original quando desabilitado */
 }
 }
+footer img {
+            max-width: 30px; /* ou um valor que você achar adequado */
+            height: auto;
+        }
+.logo { /* Estilizando o logo */
+            max-width: 200px; /* Ajuste o valor conforme necessário */
+            height: auto;
+        }
