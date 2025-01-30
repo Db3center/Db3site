@@ -44,3 +44,7 @@
     display: block; /* Essencial para centralizar a imagem sozinha */
     margin: 0 auto 20px;
 }
+footer img {
+            max-width: 30px; /* ou um valor que você achar adequado */
+            height: auto;
+        }
