@@ -1,19 +1,6 @@
 .hero {
     background-color: #f8f9fa;
 }
-.hero .container {
-    display: flex;
-    flex-direction: column; /* Itens empilhados verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente (opcional, mas bom para headers altos) */
-    text-align: center; /* Centraliza o texto dentro dos elementos filhos */
-    min-height: 200px; /* Garante um altura mínima para o header, ajusta conforme necessário */
-}
-
-.hero .row { /* Remove a necessidade do align-items-center na row */
-    align-items: initial; 
-    width: 100%; /* Ocupar toda a largura */
-}
 
 .feature-icon {
     font-size: 2em; /* Tamanho reduzido para melhor ajuste nos cards */
@@ -21,10 +8,6 @@
 
 .card {
     text-align: center; /* Centraliza o conteúdo dentro do card */
-}
-
-.features .col {
-    margin-bottom: 20px; /* Espaçamento vertical */
 }
 
 /* Responsividade para ícones maiores em telas maiores */
@@ -38,13 +21,35 @@
     background-color: #007bff; /* Mantém a cor original quando desabilitado */
 }
 }
-.logo {
-    max-width: 30px;
-    height: auto;
-    display: block; /* Essencial para centralizar a imagem sozinha */
-    margin: 0 auto 20px;
-}
 footer img {
             max-width: 30px; /* ou um valor que você achar adequado */
             height: auto;
         }
+.logo { /* Estilizando o logo */
+            max-width: 200px; /* Ajuste o valor conforme necessário */
+            height: auto;
+        }
+footer {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column; /* Alinha itens verticalmente */
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            min-height: 100px; /* Define uma altura mínima para o footer */
+            padding: 10px 0;
+        }
+
+
+footer a {
+            color: white; /* Define a cor do link como branca */
+            display: flex; /* Permite o alinhamento vertical */
+            align-items: center; /* Centraliza o ícone e o texto verticalmente */
+            gap: 5px; /* Espaçamento entre o ícone e o texto */
+        }
+
+footer p {
+            margin: 10px 0 0; /* Adiciona uma pequena margem superior ao parágrafo */
+        }
+        
+
