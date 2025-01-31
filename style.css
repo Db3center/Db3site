@@ -29,27 +29,6 @@ footer img {
             max-width: 200px; /* Ajuste o valor conforme necessário */
             height: auto;
         }
-footer {
-            background-color: black;
-            color: white;
-            display: flex;
-            flex-direction: column; /* Alinha itens verticalmente */
-            justify-content: center; /* Centraliza verticalmente */
-            align-items: center; /* Centraliza horizontalmente */
-            min-height: 100px; /* Define uma altura mínima para o footer */
-            padding: 10px 0;
-        }
 
-
-footer a {
-            color: white; /* Define a cor do link como branca */
-            display: flex; /* Permite o alinhamento vertical */
-            align-items: center; /* Centraliza o ícone e o texto verticalmente */
-            gap: 5px; /* Espaçamento entre o ícone e o texto */
-        }
-
-footer p {
-            margin: 10px 0 0; /* Adiciona uma pequena margem superior ao parágrafo */
-        }
         
 
