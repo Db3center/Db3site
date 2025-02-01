@@ -120,3 +120,11 @@ footer img {
             max-width: 200px; /* Ajuste o valor conforme necessário */
             height: auto;
         }
+.lista-centralizada {
+  display: flex;
+  justify-content: center; /* Centraliza o container da lista */
+}
+
+.lista-centralizada ul {
+  text-align: left;    /* Alinha o texto da lista à esquerda */
+}
