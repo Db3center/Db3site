@@ -137,3 +137,31 @@ footer img {
     border-color: #0062cc;
 }
 
+/* Estilo para o card de Segurança Digital */
+.card-seguranca-digital {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-seguranca-digital:hover {
+    transform: scale(1.05);
+}
+
+.card-seguranca-digital img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Estilos gerais para os botões (pode ser aplicado a todos os cards, se desejar) */
+.btn-primary {
+    background-color: #007bff; /* Cor azul padrão do Bootstrap */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
