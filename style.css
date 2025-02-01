@@ -111,3 +111,29 @@ footer img {
 .lista-centralizada ul {
   text-align: left;    /* Alinha o texto da lista à esquerda */
 }
+
+.card-impressao-3d {
+    border: none; /* Removendo a borda padrão do card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra mais suave */
+    transition: transform 0.3s ease; /* Adicionando uma transição suave */
+}
+
+.card-impressao-3d:hover {
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+.card-impressao-3d img {
+    height: 200px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Para garantir que a imagem cubra toda a área, mesmo com diferentes proporções */
+}
+
+.card-impressao-3d .btn-primary {
+    background-color: #007bff; /* Cor azul padrão do Bootstrap */
+    border-color: #007bff;
+}
+
+.card-impressao-3d .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
