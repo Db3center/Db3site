@@ -15,9 +15,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero h1 {
-    margin-bottom: 0;  /* Remove a margem inferior padrão */
-}
 .main-header {
     display: flex;
     flex-direction: column;
@@ -94,15 +91,36 @@ body {
     margin-top: 10px;
 }
 
+#contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contato label {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
 
 footer img {
             max-width: 30px; /* ou um valor que você achar adequado */
             height: auto;
         }
 .logo { /* Estilizando o logo */
-            max-width: 150px; /* Ajuste o valor conforme necessário */
+            max-width: 200px; /* Ajuste o valor conforme necessário */
             height: auto;
         }
+
 .lista-centralizada {
   display: flex;
   justify-content: center; /* Centraliza o container da lista */
@@ -110,54 +128,6 @@ footer img {
 
 .lista-centralizada ul {
   text-align: left;    /* Alinha o texto da lista à esquerda */
-}
-
-.card-impressao-3d {
-    border: none; /* Removendo a borda padrão do card */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra mais suave */
-    transition: transform 0.3s ease; /* Adicionando uma transição suave */
-}
-
-.card-impressao-3d:hover {
-    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
-}
-
-.card-impressao-3d img {
-    height: 200px; /* Altura fixa para a imagem */
-    object-fit: cover; /* Para garantir que a imagem cubra toda a área, mesmo com diferentes proporções */
-}
-
-.card-impressao-3d .btn-primary {
-    background-color: #007bff; /* Cor azul padrão do Bootstrap */
-    border-color: #007bff;
-}
-
-.card-impressao-3d .btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-/* Estilo para o card de Segurança Digital */
-.card-seguranca-digital {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.card-seguranca-digital:hover {
-    transform: scale(1.05);
-}
-
-.card-seguranca-digital img {
-    height: 200px;
-    object-fit: cover;
-}
-
-
-/* Estilos gerais para os botões (pode ser aplicado a todos os cards, se desejar) */
-.btn-primary {
-    background-color: #007bff; /* Cor azul padrão do Bootstrap */
-    border-color: #007bff;
 }
 
 
