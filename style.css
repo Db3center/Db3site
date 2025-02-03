@@ -150,4 +150,25 @@ footer img {
     font-size: 1.2rem;  /* Tamanho da fonte */
     color: #6c757d; /* Cor cinza escuro (opcional) */
 }
+/* Estilos para a seção de Impressão 3D */
+.impressao-3d .img-container {
+  width: 80%; /* Ajuste o tamanho da imagem */
+  margin: 0 auto; /* Centraliza a imagem */
+}
 
+.impressao-3d img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) { /* Em telas médias e grandes */
+    .impressao-3d .img-container {
+        width: 100%; /* Imagem ocupa todo o espaço da coluna */
+        max-width: 400px; /* Largura máxima da imagem*/
+    }
+
+    .impressao-3d img {
+        border-radius: 50%;
+    }
+}
