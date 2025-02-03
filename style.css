@@ -130,5 +130,24 @@ footer img {
   text-align: left;    /* Alinha o texto da lista à esquerda */
 }
 
+.header-container {
+    max-width: 800px; /* Largura máxima do container do header */
+}
 
+.logo {
+    max-width: 150px; /* Tamanho da logo */
+    height: auto;
+    margin-bottom: 0.5rem; /* Espaçamento entre logo e título */
+}
+
+
+.hero h1 {
+    font-size: 2rem; /* Tamanho do título - ajuste conforme necessário */
+    margin-bottom: 0; /* Removendo a margem inferior padrão do h1 */
+}
+
+.header-subtitle { /* Estilo para o subtítulo do header */
+    font-size: 1.2rem;  /* Tamanho da fonte */
+    color: #6c757d; /* Cor cinza escuro (opcional) */
+}
 
