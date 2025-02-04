@@ -28,7 +28,7 @@ body {
 }
 
 .header-container img {
-    height: 50px;
+    height: 150px;
     margin-right: 15px;
 }
 
@@ -38,24 +38,6 @@ body {
     margin: 0;
 }
 
-/* Navigation styles */
-.main-header nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.main-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.main-header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
 
 #produtos, #sobre, #contato {
     margin: 20px 0;
@@ -110,29 +92,6 @@ body {
     background-color: #45a049;
 }
 
-/* Contact form styles */
-#contato form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    margin: 0 auto;
-}
-
-#contato label {
-    text-align: left;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-#contato input, #contato textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
 
 footer img {
     max-width: 30px;
@@ -140,7 +99,7 @@ footer img {
 }
 
 .logo {
-    max-width: 50px;
+    max-width: 150px;
     height: auto;
 }
 
