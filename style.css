@@ -134,13 +134,6 @@ footer img {
     max-width: 800px; /* Largura máxima do container do header */
 }
 
-.logo {
-    max-width: 150px; /* Tamanho da logo */
-    height: auto;
-    margin-bottom: 0.5rem; /* Espaçamento entre logo e título */
-}
-
-
 .hero h1 {
     font-size: 2rem; /* Tamanho do título - ajuste conforme necessário */
     margin-bottom: 0; /* Removendo a margem inferior padrão do h1 */
@@ -171,4 +164,17 @@ footer img {
     .impressao-3d img {
         border-radius: 50%;
     }
+}
+.logo {
+    max-width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+
+/* Estilo para o botão "Saiba Mais" */
+.mbr-section-btn-main .btn-secondary {
+    /* Estilos que você desejar aplicar ao botão */
+    background-color: #007bff; /* Exemplo: Cor azul do Bootstrap */
+    color: white;
+    border: none;
 }
