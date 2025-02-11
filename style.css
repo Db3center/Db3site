@@ -54,25 +54,23 @@ body {
 /* Product grid styles */
 .produto-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+    justify-content: space-around; /* Distribui espaço entre os itens */
 }
 
 .produto {
-    width: 30%;
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    width: 23%; /*  Aproximadamente 25% para 4 itens por linha, ajuste se necessário */
+    margin: 5px; /* Espaçamento entre as imagens */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    /* ... outros estilos da classe .produto ... */
 }
 
 .produto img {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* As imagens ocupam toda a largura do container */
+    height: auto; /* Mantém a proporção das imagens */
+    display: block; /* Remove espaços em branco abaixo das imagens */
 }
+
 
 .botao-comprar {
     display: inline-block;
