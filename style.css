@@ -162,3 +162,12 @@ footer img {
         width: 45%;
     }
 }
+.banner-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.banner-grid img {
+    max-width: 300px; /* ou outro tamanho */
+    margin: 10px;
+}
