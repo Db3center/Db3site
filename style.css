@@ -118,27 +118,30 @@ footer img {
     color: #6c757d;
 }
 
-/* 3D printing section styles */
-.impressao-3d .img-container {
-    width: 80%;
-    margin: 0 auto;
+.impressao-3d .produto-grid {
+    justify-content: space-evenly; /* Melhora o espaçamento */
 }
 
-.impressao-3d img {
-    display: block;
+.impressao-3d .produto img {
     max-width: 100%;
-    height: auto;
+    max-height: 150px; /* Limita a altura das imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o container */
 }
 
-@media (min-width: 768px) {
-    .impressao-3d .img-container {
-        width: 100%;
-        max-width: 400px;
-    }
+.impressao-3d h3 {
+    margin-top: 20px; /* Espaço entre as seções */
+}
 
-    .impressao-3d img {
-        border-radius: 50%;
-    }
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.call-to-action a {
+    margin-bottom: 10px;
 }
 
 /* Button styles */
