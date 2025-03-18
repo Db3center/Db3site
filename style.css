@@ -168,6 +168,6 @@ footer img {
     justify-content: space-around;
 }
 .banner-grid img {
-    max-width: 300px; /* ou outro tamanho */
+    max-width: 100px; /* ou outro tamanho */
     margin: 10px;
 }
