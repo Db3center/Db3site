@@ -1,0 +1,209 @@
+Aqui está o CSS completo, reorganizado e otimizado, removendo os itens que não são mais necessários e mantendo apenas o essencial para o layout responsivo:
+
+### CSS Completo e Otimizado:
+
+```css
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header styles */
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container img {
+    height: 150px;
+    margin-right: 15px;
+}
+
+.header-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Centered content styles */
+.centered-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Product grid styles */
+.produto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produto {
+    width: 23%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button styles */
+.botao-comprar {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-comprar:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer img {
+    max-width: 30px;
+    height: auto;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Hero section styles */
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.impressao-3d .produto-grid {
+    justify-content: space-evenly;
+}
+
+.impressao-3d .produto img {
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.impressao-3d h3 {
+    margin-top: 20px;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.call-to-action a {
+    margin-bottom: 10px;
+}
+
+/* Estilos para a seção Medico Agora */
+#produtos .card-seguranca-digital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#produtos .card-seguranca-digital img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#produtos .card-seguranca-digital .btn {
+    margin-top: 10px;
+}
+
+/* Estilos para a seção Eletrônicos */
+#produtos .centered-content .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#produtos .centered-content .row img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#produtos .centered-content .row .col-md-6 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .produto {
+        width: 45%;
+    }
+
+    /* Ajustes para a seção Medico Agora */
+    #produtos .card-seguranca-digital {
+        padding: 10px;
+    }
+
+    #produtos .card-seguranca-digital img {
+        max-width: 80%;
+    }
+
+    /* Ajustes para a seção Eletrônicos */
+    #produtos .centered-content .row img {
+        max-width: 80%;
+    }
+
+    #produtos .centered-content .row .col-md-6 {
+        padding: 0 10px;
+    }
+}
+
+/* Banner grid styles */
+.banner-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banner-grid img {
+    max-width: 100px;
+    margin: 10px;
+}
+
