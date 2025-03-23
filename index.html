@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Multiserviços</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script async src="https://cse.google.com/cse.js?cx=YOUR_SEARCH_ENGINE_ID"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MultiPortal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#noticias">Notícias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 text-white fw-bold">Bem-vindo ao MultiPortal</h1>
+                    <p class="lead text-white">Sua plataforma completa de serviços digitais</p>
+                    <div class="search-container mt-4">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <form action="https://www.google.com/search" method="get" class="search-form" target="_blank">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control form-control-lg" name="q" placeholder="Pesquisar no Google...">
+                                        <button class="btn btn-light" type="submit">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Serviços</h2>
+            <div class="row g-4">
+                <!-- Impressão 3D -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-printer-fill service-icon"></i>
+                            <h3 class="card-title">Impressão 3D</h3>
+                            <p class="card-text">Objetos personalizados com alta qualidade e precisão.</p>
+                            <a href="impressao3d/index.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eletroeletrônicos -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-laptop service-icon"></i>
+                            <h3 class="card-title">Eletroeletrônicos</h3>
+                            <p class="card-text">Compra e venda de equipamentos eletrônicos.</p>
+                            <a href="/eletro" class="btn btn-primary">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segurança e Finanças -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-lock-fill service-icon"></i>
+                            <h3 class="card-title">Segurança e Finanças</h3>
+                            <p class="card-text">Soluções para sua segurança financeira.</p>
+                            <a href="/financas" class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Viagens -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-airplane-fill service-icon"></i>
+                            <h3 class="card-title">Viagens</h3>
+                            <p class="card-text">Planeje suas próximas aventuras conosco.</p>
+                            <a href="/viagens" class="btn btn-primary">Descobrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meditação e Relaxamento -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-peace service-icon"></i>
+                            <h3 class="card-title">Meditação</h3>
+                            <p class="card-text">Encontre paz e equilíbrio interior.</p>
+                            <a href="/meditacao" class="btn btn-primary">Relaxar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Saúde -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card">
+                        <div class="card-body text-center">
+                            <i class="bi bi-heart-pulse-fill service-icon"></i>
+                            <h3 class="card-title">Saúde</h3>
+                            <p class="card-text">Cuide do seu bem-estar com nossos especialistas.</p>
+                            <a href="/saude" class="btn btn-primary">Cuidar-se</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Parceiros -->
+    <section id="parceiros" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Empresas Parceiras</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="partner-card text-center">
+                        <img src="/images/partners/techcorp.png" alt="TechCorp" class="img-fluid mb-3 rounded">
+                        <h4>TechCorp</h4>
+                        <p>Soluções em tecnologia</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Ofertas</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="partner-card text-center">
+                        <img src="/images/partners/healthlife.png" alt="HealthLife" class="img-fluid mb-3 rounded">
+                        <h4>HealthLife</h4>
+                        <p>Produtos para saúde</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Ofertas</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="partner-card text-center">
+                        <img src="/images/partners/ecotravel.png" alt="EcoTravel" class="img-fluid mb-3 rounded">
+                        <h4>EcoTravel</h4>
+                        <p>Viagens sustentáveis</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Ofertas</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="partner-card text-center">
+                        <img src="/images/partners/financemax.png" alt="FinanceMax" class="img-fluid mb-3 rounded">
+                        <h4>FinanceMax</h4>
+                        <p>Soluções financeiras</p>
+                        <a href="#" class="btn btn-outline-primary">Ver Ofertas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Notícias -->
+    <section id="noticias" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Últimas Notícias</h2>
+            <div id="news-container" class="row g-4">
+                <!-- As notícias serão carregadas dinamicamente aqui -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>MultiPortal</h5>
+                    <p>Sua plataforma completa de serviços digitais</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Contato</h5>
+                    <p>Email: contato@multiportal.com<br>
+                    Tel: (11) 99999-9999</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

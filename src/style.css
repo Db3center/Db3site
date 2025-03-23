@@ -1,0 +1,154 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --transition-speed: 0.3s;
+}
+
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)),
+                url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-form .form-control {
+    border: none;
+    border-radius: 25px 0 0 25px;
+    padding: 0.75rem 1.5rem;
+}
+
+.search-form .btn {
+    border-radius: 0 25px 25px 0;
+    padding: 0.75rem 1.5rem;
+}
+
+.service-card {
+    transition: transform var(--transition-speed);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color var(--transition-speed);
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-primary {
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all var(--transition-speed);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+}
+
+/* Estilos para seção de parceiros */
+.partner-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform var(--transition-speed);
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+}
+
+.partner-card img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+/* Estilos para seção de notícias */
+.news-card {
+    height: 100%;
+}
+
+.news-card .card {
+    height: 100%;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed);
+}
+
+.news-card .card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 35vh;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .partner-card {
+        margin-bottom: 1rem;
+    }
+
+    .news-card {
+        margin-bottom: 1rem;
+    }
+
+    .search-container {
+        padding: 0 1rem;
+    }
+}
