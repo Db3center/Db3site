@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #0d6efd;
+}
+
+body {
+    padding-top: 56px; /* Height of navbar */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)),
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+
+/* Service Cards */
+.service-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Partner Cards */
+.partner-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Search Container */
+.search-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.search-form .form-control {
+    border: none;
+    border-radius: 30px 0 0 30px;
+}
+
+.search-form .btn {
+    border-radius: 0 30px 30px 0;
+}
+
+/* Additional styles from your original CSS */
+.print-hero {
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)),
+                url('https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    padding-top: 56px;
+}
+
+.product-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+}
+
+.process-step {
+    position: relative;
+    padding: 2rem;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.contact-form .form-control {
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+}
+
+.contact-form .btn {
+    padding: 0.75rem 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .print-hero {
+        height: 60vh;
+    }
+
+    .product-card {
+        margin-bottom: 2rem;
+    }
+
+    .process-step {
+        margin-bottom: 2rem;
+    }
+}
