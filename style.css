@@ -149,3 +149,28 @@ body {
         margin-bottom: 2rem;
     }
 }
+#contato .container {
+  text-align: center; /* Centraliza o conteúdo dentro do container */
+}
+
+#contato h3 {
+  margin-bottom: 2rem; /* Aumenta a margem inferior do título */
+}
+
+#contato .btn {
+    padding: 1rem 2rem; /* Aumenta o preenchimento do botão */
+    font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+}
+
+/*  Opcional: Estilos para o botão com cores personalizadas, caso não esteja usando Bootstrap */
+/*
+#contato .btn-primary {
+  background-color: var(--primary-color); /* Use a sua cor primária */
+  border-color: var(--primary-color);
+  color: white;
+}
+
+#contato .btn-primary:hover {
+  background-color: darken(var(--primary-color), 10%); /* Escurece a cor ao passar o mouse */
+  border-color: darken(var(--primary-color), 10%);
+}
