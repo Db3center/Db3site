@@ -70,13 +70,15 @@ body {
 
 /* Additional styles from your original CSS */
 .print-hero {
-    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)),
-                url('https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?auto=format&fit=crop&q=80');
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('https://images.unsplash.com/photo-1631700611307-37dbcb89ef7e?auto=format&fit=crop&q=80');
     background-size: cover;
     background-position: center;
-    height: 80vh;
-    position: relative;
-    padding-top: 56px;
+    height: 60vh; /* Reduz a altura para 60% da viewport */
+    display: flex; /* Define display como flex para melhor controle de alinhamento */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 2rem 0; /* Adiciona padding para melhor espaçamento */
 }
 
 .product-card {
@@ -138,15 +140,13 @@ body {
 
 @media (max-width: 768px) {
     .print-hero {
-        height: 60vh;
+        height: 50vh; /* Reduz ainda mais a altura em telas menores */
     }
-
-    .product-card {
-        margin-bottom: 2rem;
-    }
-
-    .process-step {
-        margin-bottom: 2rem;
+    .print-hero .col-lg-6 {
+        /*Ajusta o tamanho da coluna para telas menores*/
+        /*Exemplo:*/
+        margin: 0 auto;
+        max-width: 80%;
     }
 }
 #contato .container {
