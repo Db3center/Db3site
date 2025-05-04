@@ -28,6 +28,7 @@ body {
 
 .hero-short .icon {
     margin-bottom: 1rem; /* Reduz o espaço abaixo do ícone */
+    color: white;
 }
 
 .hero-short h3 {
