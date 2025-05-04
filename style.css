@@ -21,7 +21,29 @@ body {
     height: 80vh;
     position: relative;
 }
+.hero-short {
+    height: 50vh; /* Reduz a altura para 50% da viewport */
+    padding: 2rem 0; /* Reduz o preenchimento vertical */
+}
 
+.hero-short .icon {
+    margin-bottom: 1rem; /* Reduz o espaço abaixo do ícone */
+}
+
+.hero-short h3 {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte do título */
+    margin-bottom: 1rem; /* Reduz o espaçamento inferior */
+}
+
+.hero-short p {
+    font-size: 0.9rem; /* Reduz o tamanho do texto */
+    margin-bottom: 1.5rem; /* Reduz o espaço abaixo do parágrafo */
+}
+
+.hero-short .btn {
+    padding: 0.5rem 1.5rem; /* Ajusta o preenchimento do botão para torná-lo menor */
+    font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+}
 /* Service Cards */
 .service-card {
     transition: transform 0.3s ease;
