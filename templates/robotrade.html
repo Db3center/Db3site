@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RoboTrade Db3</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
       --bg-dark: #181c1f;
@@ -38,12 +38,74 @@
       color: var(--primary-blue);
       margin-bottom: 20px;
     }
+    nav.navbar {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    .logo-img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: var(--text-main);
+    }
+    .nav-search {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-search input {
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+    }
+    .nav-search button {
+      background-color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--primary-blue-dark);
+    }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
       animation: fadeInUp 1s ease;
-      background: none;
     }
     .features {
       display: grid;
@@ -97,15 +159,10 @@
       box-shadow: 0 2px 10px rgba(37,211,102,0.12);
       text-decoration: none;
     }
-    .whatsapp-btn:hover, .whatsapp-btn:focus {
+    .whatsapp-btn:hover {
       background: linear-gradient(90deg, #128c7e, var(--whatsapp-green));
       transform: scale(1.05);
       box-shadow: 0 4px 20px rgba(37,211,102,0.18);
-      color: #fff;
-      text-decoration: none;
-    }
-    .whatsapp-btn i {
-      font-size: 1.5em;
     }
     footer {
       background-color: #20262a;
@@ -124,52 +181,38 @@
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
-  <header>
+</head>
+<body>
 
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <img src="/logodb.png" alt="Logo" class="logo-img" />
+      <span>Portal Multiserviços</span>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="/" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#estrategias" class="nav-link"><i class="fas fa-cogs"></i> Estratégias</a></li>
+      <li><a href="#recursos" class="nav-link"><i class="fas fa-star"></i> Recursos</a></li>
+      <li><a href="#contato" class="nav-link"><i class="fab fa-whatsapp"></i> Contato</a></li>
+    </ul>
+    <form action="https://www.google.com/search" method="get" target="_blank" class="nav-search">
+      <input type="text" name="q" placeholder="Pesquisar no Google..." />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+  </div>
+</nav>
+
+<header>
   <h1>🤖 RoboTrade Db3</h1>
   <h2>Para estudo ou Trade Real</h2>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="/logodb.png" alt="Logo" class="logo-img me-2">
-                Portal Multiserviços
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-                
-            </button>
-             <form action="https://www.google.com/search" method="get" class="search-form" target="_blank">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control form-control-lg" name="q" placeholder="Pesquisar no Google...">
-                                        <button class="btn btn-light" type="submit">
-                                            <i class="bi bi-search"></i>
-                                        </button>
-                                    </div>
-                                </form>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">Home</a>
-                    </li>
-                    
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
-   <h1>🤖 RoboTrade Db3</h1>
-  <h2>Para estudo ou Trade Real</h2>
   <p>Automação inteligente para operar criptomoedas com precisão e segurança</p>
- 
 </header>
-<body>
-<section>
-  
-  <p>Automação inteligente para operar criptomoedas com precisão e segurança</p>
+
+<section id="estrategias">
   <h2><i class="fas fa-info-circle icon"></i> O que é?</h2>
   <p>O RoboTrade é um sistema automatizado de negociação para criptomoedas como Bitcoin (BTC), Ripple (XRP) e Dogecoin (DOGE). Ele combina análise técnica avançada com lógica adaptativa para identificar oportunidades de alta probabilidade.</p>
 </section>
-
 <section>
   <h2><i class="fas fa-cogs icon"></i> Estratégias Integradas</h2>
   <div class="features">
@@ -194,7 +237,7 @@
   </div>
 </section>
 
-<section>
+<section id="recursos">
   <h2><i class="fas fa-star icon"></i> Recursos e Diferenciais</h2>
   <ul>
     <li><i class="fas fa-check-circle icon"></i> Modo simulado e real</li>
@@ -204,7 +247,7 @@
   </ul>
 </section>
 
-<section>
+<section id="contato">
   <div class="whatsapp-contact">
     <h2><i class="fab fa-whatsapp icon"></i> Fale com a gente pelo WhatsApp</h2>
     <a class="whatsapp-btn" href="https://wa.me/5541991939310" target="_blank" rel="noopener">
