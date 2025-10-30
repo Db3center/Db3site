@@ -6,33 +6,44 @@
   <title>RoboTrade Db3</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    :root {
+      --bg-dark: #181c1f;
+      --card-dark: #23282d;
+      --primary-blue: #2bd2ff;
+      --primary-blue-dark: #007bff;
+      --text-main: #f0f4f8;
+      --text-secondary: #a5b1c2;
+      --whatsapp-green: #25d366;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f4f6f8;
-      color: #333;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
       scroll-behavior: smooth;
     }
     header {
-      background: linear-gradient(135deg, #1e88e5, #42a5f5);
+      background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-dark));
       color: white;
       padding: 60px 20px;
       text-align: center;
       animation: fadeIn 1.5s ease;
+      border-bottom: 1px solid #23282d;
     }
     h1 {
       font-size: 2.8em;
       margin-bottom: 10px;
+    }
+    h2 {
+      color: var(--primary-blue);
+      margin-bottom: 20px;
     }
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
       animation: fadeInUp 1s ease;
-    }
-    h2 {
-      color: #1e88e5;
-      margin-bottom: 20px;
+      background: none;
     }
     .features {
       display: grid;
@@ -40,59 +51,69 @@
       gap: 20px;
     }
     .feature-box {
-      background-color: white;
+      background-color: var(--card-dark);
+      color: var(--text-main);
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      border: 1px solid #22272c;
     }
     .feature-box:hover {
-      transform: translateY(-5px);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
     }
     ul {
       padding-left: 20px;
     }
     ul li {
       margin-bottom: 10px;
+      color: var(--text-secondary);
     }
     .icon {
       font-size: 1.4em;
       margin-right: 8px;
-      color: #1e88e5;
+      color: var(--primary-blue);
     }
-    form {
-      background-color: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    .whatsapp-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
     }
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1em;
-    }
-    button {
-      background-color: #1e88e5;
-      color: white;
+    .whatsapp-btn {
+      background: linear-gradient(90deg, var(--whatsapp-green), #128c7e);
+      color: #fff;
       border: none;
-      padding: 12px 20px;
-      font-size: 1em;
-      border-radius: 6px;
+      padding: 16px 32px;
+      font-size: 1.2em;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 10px rgba(37,211,102,0.12);
+      text-decoration: none;
     }
-    button:hover {
-      background-color: #1565c0;
+    .whatsapp-btn:hover, .whatsapp-btn:focus {
+      background: linear-gradient(90deg, #128c7e, var(--whatsapp-green));
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(37,211,102,0.18);
+      color: #fff;
+      text-decoration: none;
+    }
+    .whatsapp-btn i {
+      font-size: 1.5em;
     }
     footer {
-      background-color: #1e88e5;
-      color: white;
+      background-color: #20262a;
+      color: var(--text-secondary);
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      border-top: 1px solid #23282d;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -113,7 +134,7 @@
 
 <section>
   <h2><i class="fas fa-info-circle icon"></i> O que é?</h2>
-  <p>O RoboTrade é um sistema automatizado de negociação para criptomoedas como Bitcoin (BTC), Ripple (XRP) e Dogecoin (DOGE). Ele combina análise técnica avançada com lógica adaptativa para identificar oportunidades com alta precisão — mesmo em mercados voláteis ou laterais.</p>
+  <p>O RoboTrade é um sistema automatizado de negociação para criptomoedas como Bitcoin (BTC), Ripple (XRP) e Dogecoin (DOGE). Ele combina análise técnica avançada com lógica adaptativa para identificar oportunidades de alta probabilidade.</p>
 </section>
 
 <section>
@@ -151,23 +172,16 @@
 </section>
 
 <section>
-  <h2><i class="fas fa-envelope icon"></i> Fale com a gente</h2>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="_replyto" required>
-
-    <label for="message">Mensagem:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
+  <div class="whatsapp-contact">
+    <h2><i class="fab fa-whatsapp icon"></i> Fale com a gente pelo WhatsApp</h2>
+    <a class="whatsapp-btn" href="https://wa.me/5541991939310" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i> Fale pelo WhatsApp: (41) 99193-9310
+    </a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2025 RoboTrade Cleverson — Todos os direitos reservados</p>
+  <p>© 2025 RoboTrade Db3 — Todos os direitos reservados</p>
 </footer>
 
 </body>
