@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Robô de Trade Inteligente — Página de Vendas</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #00ffd5;
+      text-shadow: 0 0 10px #00ffd5;
+    }
+
+    h3 {
+      color: #00ffd5;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffd5;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .planos {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .plano {
+      flex: 1;
+      min-width: 280px;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffd5;
+      text-align: center;
+    }
+
+    .plano h3 {
+      margin-bottom: 10px;
+    }
+
+    .preco {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #00ffd5;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffd5;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Robô de Trade Inteligente</h1>
+
+  <div class="box">
+    <p>Automatize suas operações com inteligência! Nosso robô de trade monitora o mercado em tempo real e executa estratégias baseadas em indicadores técnicos, padrões de candle e volatilidade. Ideal para traders que buscam performance, controle e personalização.</p>
+  </div>
+
+  <h3>📌 Funcionalidades principais</h3>
+  <div class="box">
+    <ul>
+      <li>Dashboard completo com saldo, ativos, desempenho e controle de risco</li>
+      <li>Simulador de estratégias com dados reais e lucro estimado</li>
+      <li>Configuração de indicadores: RSI, EMA, padrões de candle</li>
+      <li>Calibração de parâmetros: candle forte, ATR, RSI mínimo/máximo</li>
+      <li>Integração com Binance (Testnet e Real)</li>
+      <li>Exportação de histórico em CSV</li>
+    </ul>
+  </div>
+
+  <h3>💳 Planos disponíveis</h3>
+  <div class="planos">
+    <div class="plano">
+      <h3>📦 Aplicativo Pronto</h3>
+      <div class="preco">R$ 500</div>
+      <p>Ideal para quem quer usar o robô sem mexer no código.</p>
+      <ul>
+        <li>Instalador para Windows</li>
+        <li>Interface com Dashboard e Simulador</li>
+        <li>Suporte básico por e-mail</li>
+      </ul>
+      <button onclick="alert('Entre em contato para adquirir o aplicativo')">Comprar Aplicativo</button>
+    </div>
+
+    <div class="plano">
+      <h3>💻 Código Aberto (GitHub)</h3>
+      <div class="preco">R$ 700</div>
+      <p>Ideal para desenvolvedores e entusiastas que querem personalizar ou evoluir o projeto.</p>
+      <ul>
+        <li>Código completo com backend e frontend</li>
+        <li>Documentação de instalação e uso</li>
+        <li>Licença de uso comercial</li>
+      </ul>
+      <button onclick="alert('Entre em contato para acesso ao repositório')">Comprar Código</button>
+    </div>
+  </div>
+
+  <h3>🔐 Como configurar suas chaves da Binance</h3>
+  <div class="box">
+    <p>Para operar com o robô, você precisa gerar suas chaves de API na Binance:</p>
+    <ul>
+      <li><a href="https://testnet.binancefuture.com" target="_blank">Binance Testnet</a> — para simulações</li>
+      <li><a href="https://www.binance.com" target="_blank">Binance Real</a> — para operações reais</li>
+    </ul>
+    <p>Após gerar, insira a <strong>API Key</strong> e <strong>Secret Key</strong> no painel do dashboard.</p>
+  </div>
+
+  <div class="center">
+    <button onclick="window.location.href='dashboard.html'">📊 Acessar Dashboard</button>
+    <button onclick="window.location.href='simulador.html'">🧪 Ir para Simulador</button>
+  </div>
+</body>
+</html>
