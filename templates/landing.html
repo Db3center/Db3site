@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bem-vindo ao Robô de Trade</title>
   <style>
     body {
@@ -12,13 +13,9 @@
       line-height: 1.6;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       color: #00ffd5;
       text-shadow: 0 0 10px #00ffd5;
-    }
-
-    h3 {
-      color: #00ffd5;
       margin-top: 30px;
     }
 
@@ -37,6 +34,7 @@
 
     ul {
       margin-left: 20px;
+      padding-left: 0;
     }
 
     li {
@@ -68,9 +66,38 @@
       text-align: center;
       margin-top: 40px;
     }
+
+    .planos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .plano {
+      flex: 1 1 300px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffd5;
+    }
+
+    .preco {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #00ffd5;
+    }
+
+    @media (max-width: 768px) {
+      .planos {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
+
   <h1>🚀 Bem-vindo ao Robô de Trade Inteligente</h1>
 
   <div class="box">
@@ -111,6 +138,7 @@
     </ul>
     <p>Ideal para validar sua configuração antes de operar com saldo real.</p>
   </div>
+
   <h3>💳 Planos disponíveis</h3>
   <div class="planos">
     <div class="plano">
@@ -142,16 +170,16 @@
   <div class="box">
     <p>Para operar com o robô, você precisa informar suas <strong>API Keys da Binance</strong>. Você pode obter essas chaves acessando:</p>
     <ul>
-      <li><a href="https://testnet.binancefuture.com" target="_blank">Binance Testnet</a> (para simulações)</li>
-      <li><a href="https://www.binance.com" target="_blank">Binance Real</a> (para operações reais)</li>
+      <li><a href="https://testnet.binancefuture.com" target="_blank" rel="noopener">Binance Testnet</a> (para simulações)</li>
+      <li><a href="https://www.binance.com" target="_blank" rel="noopener">Binance Real</a> (para operações reais)</li>
     </ul>
     <p>Após gerar suas chaves, insira a <strong>API Key</strong> e a <strong>Secret Key</strong> no painel do dashboard, separadamente para Testnet e Real.</p>
     <p>⚠️ Mantenha suas chaves em segurança. Nunca compartilhe com terceiros.</p>
   </div>
 
   <div class="center">
-    <button onclick="window.location.href='Robotrade.html'"> Voltar </button>
-    
+    <button onclick="window.location.href='Robotrade.html'">Voltar</button>
   </div>
+
 </body>
 </html>
