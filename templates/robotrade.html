@@ -1,159 +1,81 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Landing Page RoboTrade</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    :root {
-      --bg-dark: #181c1f;
-      --card-dark: #23282d;
-      --primary-blue: #ca940f; 
-      --primary-blue-dark: #007bff;
-      --text-main: #f0f4f8;
-      --text-secondary: #a5b1c2;
-    }
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .navbar {
-      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    .navbar-brand {
-      font-weight: bold;
-      color: white;
-    }
-    .logo-img {
-      height: 40px;
-    }
-    .nav-link {
-      color: white !important;
-    }
-    .nav-link:hover {
-      color: var(--text-main) !important;
-    }
-    section {
-      padding: 60px 20px;
-      animation: fadeInUp 1s ease;
-    }
-    h2 {
-      color: var(--primary-blue);
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .service-card {
-      background-color: var(--card-dark);
-      color: var(--text-main);
-      border: 1px solid #22272c;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-      transition: transform 0.3s ease, box-shadow 0.3s;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
-    }
-    .btn-primary {
-      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
-      border: none;
-    }
-    .btn-primary:hover {
-      background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
-    }
-    footer {
-      background-color: #20262a;
-      color: var(--text-secondary);
-      padding: 40px 20px;
-      border-top: 1px solid #23282d;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="/">
-      <img src="/logodb.png" alt="Logo" class="logo-img me-2" />
-      RoboTrade
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#bybit">Robô Bybit</a></li>
-        <li class="nav-item"><a class="nav-link" href="#binance">Robô Binance</a></li>
-        <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-      </ul>
+<section id="comparacao" class="container">
+  <h2><i class="fas fa-balance-scale me-2"></i> Compare os Robôs</h2>
+  <div class="row">
+    <!-- Robô Bybit -->
+    <div class="col-md-6 mb-4">
+      <div class="service-card p-4 text-center">
+        <h3>🚀 Robô Bybit — Simples e Eficiente</h3>
+        <p>Ideal para quem busca praticidade e agilidade.</p>
+        <ul class="text-start">
+          <li><i class="fas fa-check me-2"></i> Estratégias básicas de scalping e swing trade</li>
+          <li><i class="fas fa-check me-2"></i> Configuração rápida e intuitiva</li>
+          <li><i class="fas fa-check me-2"></i> Operações automatizadas com baixo consumo de recursos</li>
+          <li><i class="fas fa-check me-2"></i> Código aberto e auditável</li>
+        </ul>
+        <h4 class="mt-3">💰 Investimento: R$300,00</h4>
+        <a href="#contato" class="btn btn-primary mt-3">Quero o Robô Bybit</a>
+      </div>
+    </div>
+    <!-- Robô Binance -->
+    <div class="col-md-6 mb-4">
+      <div class="service-card p-4 text-center">
+        <h3>⚙️ Robô Binance — Completo e Avançado</h3>
+        <p>Para quem deseja recursos avançados e máxima personalização.</p>
+        <ul class="text-start">
+          <li><i class="fas fa-check me-2"></i> Estratégias avançadas com indicadores técnicos (RSI, MACD, EMAs, ATR)</li>
+          <li><i class="fas fa-check me-2"></i> Painel completo por ativo com lógica específica</li>
+          <li><i class="fas fa-check me-2"></i> Gestão de risco embutida e controle de posições</li>
+          <li><i class="fas fa-check me-2"></i> Modo simulado e real para testes e operações</li>
+          <li><i class="fas fa-check me-2"></i> Código aberto e sem coleta de dados do usuário</li>
+        </ul>
+        <h4 class="mt-3">💰 Investimento: R$500,00</h4>
+        <a href="#contato" class="btn btn-primary mt-3">Quero o Robô Binance</a>
+      </div>
     </div>
   </div>
-</nav>
 
-<header class="container text-center mt-5 pt-5">
-  <h1>🤖 RoboTrade</h1>
-  <h2>Automação inteligente para operar criptomoedas</h2>
-  <p>Código aberto, controle total e privacidade garantida — sem acesso a nenhuma informação do usuário.</p>
-</header>
-
-<section id="bybit" class="container">
-  <h2><i class="fas fa-rocket me-2"></i> Robô Bybit — Simples e Eficiente</h2>
-  <div class="service-card p-4">
-    <p>Ideal para quem busca praticidade e agilidade. O robô Bybit oferece:</p>
-    <ul>
-      <li><i class="fas fa-check me-2"></i> Estratégias básicas de scalping e swing trade</li>
-      <li><i class="fas fa-check me-2"></i> Configuração rápida e intuitiva</li>
-      <li><i class="fas fa-check me-2"></i> Operações automatizadas com baixo consumo de recursos</li>
-      <li><i class="fas fa-check me-2"></i> Total transparência: código aberto e auditável</li>
-    </ul>
+  <!-- Tabela comparativa -->
+  <div class="table-responsive mt-5">
+    <table class="table table-dark table-striped text-center align-middle">
+      <thead>
+        <tr>
+          <th>Recursos</th>
+          <th>Robô Bybit (R$300)</th>
+          <th>Robô Binance (R$500)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estratégias</td>
+          <td>Básicas (scalping, swing)</td>
+          <td>Avançadas (RSI, MACD, EMAs, ATR)</td>
+        </tr>
+        <tr>
+          <td>Configuração</td>
+          <td>Rápida e intuitiva</td>
+          <td>Personalizável e detalhada</td>
+        </tr>
+        <tr>
+          <td>Gestão de risco</td>
+          <td>Simples</td>
+          <td>Completa com controle de posições</td>
+        </tr>
+        <tr>
+          <td>Modo simulado</td>
+          <td>Não disponível</td>
+          <td>Disponível</td>
+        </tr>
+        <tr>
+          <td>Privacidade</td>
+          <td>Código aberto, sem coleta de dados</td>
+          <td>Código aberto, sem coleta de dados</td>
+        </tr>
+        <tr>
+          <td>Ação</td>
+          <td><a href="#contato" class="btn btn-primary">Comprar Robô Bybit</a></td>
+          <td><a href="#contato" class="btn btn-primary">Comprar Robô Binance</a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
-
-<section id="binance" class="container">
-  <h2><i class="fas fa-cogs me-2"></i> Robô Binance — Completo e Avançado</h2>
-  <div class="service-card p-4">
-    <p>Para quem deseja recursos avançados e máxima personalização. O robô Binance inclui:</p>
-    <ul>
-      <li><i class="fas fa-check me-2"></i> Estratégias avançadas com indicadores técnicos (RSI, MACD, EMAs, ATR)</li>
-      <li><i class="fas fa-check me-2"></i> Painel completo por ativo com lógica específica</li>
-      <li><i class="fas fa-check me-2"></i> Gestão de risco embutida e controle de posições</li>
-      <li><i class="fas fa-check me-2"></i> Modo simulado e real para testes e operações</li>
-      <li><i class="fas fa-check me-2"></i> Código aberto e sem coleta de dados do usuário</li>
-    </ul>
-  </div>
-</section>
-
-<section id="recursos" class="container">
-  <h2><i class="fas fa-star me-2"></i> Recursos e Benefícios</h2>
-  <ul>
-    <li><i class="fas fa-check-circle me-2"></i> Código aberto e auditável</li>
-    <li><i class="fas fa-check-circle me-2"></i> Controle total pelo usuário</li>
-    <li><i class="fas fa-check-circle me-2"></i> Privacidade garantida — não temos acesso às suas informações</li>
-    <li><i class="fas fa-check-circle me-2"></i> Flexibilidade para operar em diferentes corretoras</li>
-  </ul>
-</section>
-
-<section id="contato" class="container text-center">
-  <h2><i class="fab fa-whatsapp me-2"></i> Fale com a gente pelo WhatsApp</h2>
-  <a class="btn btn-primary mt-3" href="https://wa.me/5541991939310" target="_blank" rel="noopener">
-    <i class="fab fa-whatsapp me-2"></i> Fale pelo WhatsApp: (41) 99193-9310
-  </a>
-</section>
-
-<footer class="text-center mt-5">
-  <p>© 2025 RoboTrade — Todos os direitos reservados</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
