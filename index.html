@@ -38,45 +38,6 @@
     .nav-link:hover {
       color: var(--text-main) !important;
     }
-    .search-form .form-control {
-      border-radius: 6px;
-    }
-    .search-form .btn {
-      border-radius: 6px;
-    }
-    section {
-      padding: 60px 20px;
-      animation: fadeInUp 1s ease;
-    }
-    h2 {
-      color: var(--primary-blue);
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .service-card {
-      background-color: var(--card-dark);
-      color: var(--text-main);
-      border: 1px solid #22272c;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-      transition: transform 0.3s ease, box-shadow 0.3s;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
-    }
-    .service-icon {
-      font-size: 2em;
-      color: var(--primary-blue);
-      margin-bottom: 15px;
-    }
-    .btn-primary {
-      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
-      border: none;
-    }
-    .btn-primary:hover {
-      background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
-    }
     .highlight-section {
       background-color: #20262a;
       border-radius: 12px;
@@ -84,9 +45,22 @@
       margin-top: 40px;
       text-align: center;
       color: var(--text-main);
+      animation: fadeInUp 1s ease;
     }
     .highlight-section h3 {
       color: var(--primary-blue);
+    }
+    .highlight-section i {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: var(--primary-blue);
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+      border: none;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
     }
     footer {
       background-color: #20262a;
@@ -123,55 +97,45 @@
   </div>
 </nav>
 
-<section id="services">
-  <div class="container">
-    <h2>Nossos Serviços</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="service-card card text-center p-4 h-100">
-          <div class="service-icon"><i class="bi bi-printer"></i></div>
-          <h3>Impressão 3D</h3>
-          <p>Transforme suas ideias em realidade com nossa impressão 3D de alta qualidade.</p>
-          <a href="https://www.instagram.com/unika_3d" class="btn btn-primary mt-3" target="_blank">Saiba Mais</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card card text-center p-4 h-100">
-          <div class="service-icon"><i class="bi bi-tools"></i></div>
-          <h3>Finanças</h3>
-          <p>Faça a precificação do seu produto e análise financeira do seu negócio.</p>
-          <a href="https://blank-duplicated-k63x.bolt.host/" class="btn btn-primary mt-3" target="_blank">Acesse</a>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="service-card card text-center p-4 h-100">
-          <div class="service-icon"><i class="bi bi-shield-lock-fill"></i></div>
-          <h3>Segurança</h3>
-          <p>Acesse nossas dicas e ferramentas para sua proteção Online. Proteja-se de golpes virtuais.</p>
-          <a href="/templates/seg.html" class="btn btn-primary mt-3">Acesse</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <div class="container">
+  <!-- Criptomoedas / RoboTrade -->
   <div class="highlight-section">
+    <i class="fas fa-chart-line"></i>
+    <h3>💹 Criptomoedas</h3>
+    <p>Automação para Cripto — modo real e simulado!</p>
+    <a href="/templates/robotrade.html" class="btn btn-primary mt-3">Saiba Mais</a>
+  </div>
+
+  <!-- Jogos Web3 -->
+  <div class="highlight-section">
+    <i class="fas fa-gamepad"></i>
     <h3>🎮 Jogos WEB3</h3>
     <p>Divirta-se e ganhe criptomoedas jogando!</p>
     <a href="https://db3play.playw3.com/" class="btn btn-primary mt-3" target="_blank">Jogue Agora</a>
   </div>
 
+  <!-- Segurança -->
   <div class="highlight-section">
-    <h3>🤖 RoboTrade DB3</h3>
-    <p>Automação para Cripto — modo real e simulado!</p>
-    <a href="/templates/robotrade.html" class="btn btn-primary mt-3">Saiba Mais</a>
+    <i class="fas fa-lock"></i>
+    <h3>🔒 Segurança</h3>
+    <p>Acesse nossas dicas e ferramentas para sua proteção online. Proteja-se de golpes virtuais.</p>
+    <a href="/templates/seg.html" class="btn btn-primary mt-3">Acesse</a>
   </div>
 
+  <!-- Renda Passiva -->
   <div class="highlight-section">
-    <h3>🎲 Lotofácil</h3>
-    <p>Veja nossas análises e aposte com inteligência!</p>
-    <a href="https://lottery-analysis-ueqe.bolt.host/" class="btn btn-primary mt-3" target="_blank">Acesse</a>
+    <i class="fas fa-coins"></i>
+    <h3>💰 Renda Passiva</h3>
+    <p>Descubra formas inteligentes de gerar renda passiva com criptomoedas e investimentos digitais.</p>
+    <a href="/templates/renda.html" class="btn btn-primary mt-3">Explorar</a>
+  </div>
+
+  <!-- Achadinhos -->
+  <div class="highlight-section">
+    <i class="fas fa-shopping-cart"></i>
+    <h3>🛍️ Achadinhos</h3>
+    <p>Confira nossas dicas e achados exclusivos para economizar e aproveitar oportunidades.</p>
+    <a href="/templates/achadinhos.html" class="btn btn-primary mt-3">Ver Achados</a>
   </div>
 </div>
 
