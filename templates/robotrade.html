@@ -11,109 +11,79 @@
     :root {
       --bg-dark: #181c1f;
       --card-dark: #23282d;
-      --primary-blue: #ca940f;
+      --primary-blue: #ca940f; 
       --primary-blue-dark: #007bff;
       --text-main: #f0f4f8;
       --text-secondary: #a5b1c2;
     }
-
     body {
       background-color: var(--bg-dark);
       color: var(--text-main);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 40px;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
     }
-
-    h1, h2, h3 {
-      color: var(--primary-blue);
-      text-shadow: 0 0 10px var(--primary-blue);
-      margin-top: 30px;
-    }
-
-    p {
-      font-size: 1.1em;
-      margin-bottom: 15px;
-    }
-
-    .box {
-      background-color: var(--card-dark);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(202, 148, 15, 0.3);
-      margin-bottom: 30px;
-    }
-
-    ul {
-      margin-left: 20px;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: var(--primary-blue);
-      text-decoration: underline;
-    }
-
-    button {
+    .navbar {
       background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 1em;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(202, 148, 15, 0.4);
-      transition: transform 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-
-    button:hover {
-      transform: scale(1.05);
+    .navbar-brand {
+      font-weight: bold;
+      color: white;
+    }
+    .logo-img {
+      height: 40px;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      color: var(--text-main) !important;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      color: var(--primary-blue);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .service-card {
+      background-color: var(--card-dark);
+      color: var(--text-main);
+      border: 1px solid #22272c;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      text-align: center;
+      padding: 30px;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
+    }
+    .service-card i {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: var(--primary-blue);
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+      border: none;
+    }
+    .btn-primary:hover {
       background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
     }
-
-    .center {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .planos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: space-between;
-    }
-
-    .plano {
-      flex: 1 1 300px;
-      background-color: var(--card-dark);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(202, 148, 15, 0.3);
-    }
-
-    .preco {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin: 10px 0;
-      color: var(--primary-blue);
-    }
-    body {
-    padding-top: 80px; /* Compensa a altura da navbar fixa */
-    }
-
-    @media (max-width: 768px) {
-      .planos {
-        flex-direction: column;
-      }
+    footer {
+      background-color: #20262a;
+      color: var(--text-secondary);
+      padding: 40px 20px;
+      border-top: 1px solid #23282d;
     }
   </style>
 </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
       <img src="/logodb.png" alt="Logo" class="logo-img me-2" />
@@ -214,21 +184,22 @@
     </table>
   </div>
   </section>
-     </body>
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Portal - Db3center</h5>
-                    <p>Soluções para seu Negócio</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <h5>Redes Sociais</h5>
-                    <p><a href="https://www.instagram.com/unika_3d/" target="_blank">Siga-nos no Instagram</a> </p>
-                   <a href="https://wa.me/5541991939310?text=Bem%20vindo%20a%20Db3center" class="btn btn-outline-primary">WattsApp</a>
-                </div>
-            </div>
-        </div>
-    </footer>
- 
+    <footer class="text-center mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Portal - Db3center</h5>
+        <p>Soluções para seu Negócio</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Redes Sociais</h5>
+        <p><a href="https://www.instagram.com/db3market/" target="_blank">Siga-nos no Instagram</a></p>
+        <a href="https://wa.me/5541991939310?text=Bem%20vindo%20a%20Db3center" class="btn btn-outline-primary">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
