@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentoria On Fire</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #181c1f;
+      --card-dark: #23282d;
+      --primary-blue: #ca940f; 
+      --primary-blue-dark: #007bff;
+      --text-main: #f0f4f8;
+      --text-secondary: #a5b1c2;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: white;
+    }
+    .logo-img {
+      height: 40px;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      color: var(--text-main) !important;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      color: var(--primary-blue);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .service-card {
+      background-color: var(--card-dark);
+      color: var(--text-main);
+      border: 1px solid #22272c;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      text-align: center;
+      padding: 30px;
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
+    }
+    .service-card i {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: var(--primary-blue);
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+      border: none;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
+    }
+    footer {
+      background-color: #20262a;
+      color: var(--text-secondary);
+      padding: 40px 20px;
+      border-top: 1px solid #23282d;
+    }
+    .lead-form {
+      background-color: var(--card-dark);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    }
+    .form-control {
+      background-color: #2a2f34;
+      border: none;
+      color: var(--text-main);
+    }
+    .form-control:focus {
+      background-color: #2a2f34;
+      color: var(--text-main);
+      box-shadow: 0 0 0 0.2rem rgba(202,148,15,0.25);
+    }
+    label {
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/logodb.png" alt="Logo" class="logo-img me-2" />
+      Mentoria On Fire
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#metodo">Método</a></li>
+        <li class="nav-item"><a class="nav-link" href="#bonus">Bônus</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cta">Inscreva-se</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="inicio" class="text-center">
+  <div class="container">
+    <h1 class="mb-4">🔥 Mentoria On Fire 🔥</h1>
+    <p class="lead">A primeira venda é apenas a faísca. Mas o que você realmente precisa é de uma estrutura que transforme essa faísca em uma chama que nunca apaga.</p>
+    <a href="#cta" class="btn btn-primary btn-lg mt-4">Acenda sua chama milionária</a>
+  </div>
+</section>
+
+<!-- Método -->
+<section id="metodo">
+  <div class="container">
+    <h2>Revelação do Método</h2>
+    <div class="service-card">
+      <i class="fas fa-box-open"></i>
+      <p>Pela primeira vez, nós vamos abrir a caixa preta. O método exato que os maiores players usam para vender todos os dias. Você terá acesso a produtos ocultos e ferramentas de espionagem que encontram o lucro em tempo real.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Ecossistema -->
+<section id="bonus">
+  <div class="container">
+    <h2>O Ecossistema On Fire</h2>
+    <div class="service-card">
+      <i class="fas fa-fire"></i>
+      <p>Na Mentoria On Fire, você não caminha sozinho. Você terá o apoio de gestores de tráfego particulares analisando suas campanhas ao vivo, suporte exclusivo e estratégias de inteligência artificial com o ChatGPT para acelerar seus resultados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Lead Capture Form -->
+<section id="cta" class="text-center">
+  <div class="container">
+    <h2>Garanta sua Vaga</h2>
+    <p class="lead">Preencha seus dados abaixo e receba acesso exclusivo à Mentoria On Fire.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="lead-form" action="https://seuservicoemailmarketing.com/inscricao" method="post">
+          <div class="mb-3 text-start">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="mb-3 text-start">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg w-100">Quero Participar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+  <p>&copy; 2025 Mentoria On Fire. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
