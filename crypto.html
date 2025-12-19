@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal Cripto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-dark: #181c1f;
+      --card-dark: #23282d;
+      --primary-blue: #ca940f; 
+      --primary-blue-dark: #007bff;
+      --text-main: #f0f4f8;
+      --text-secondary: #a5b1c2;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: white;
+    }
+    .logo-img {
+      height: 40px;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .nav-link:hover {
+      color: var(--text-main) !important;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h2 {
+      color: var(--primary-blue);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .service-card {
+      background-color: var(--card-dark);
+      color: var(--text-main);
+      border: 1px solid #22272c;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+      text-align: center;
+      padding: 30px;
+      height: 100%;
+      margin-bottom: 20px;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
+    }
+    .service-card i {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: var(--primary-blue);
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+      border: none;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
+    }
+    footer {
+      background-color: #20262a;
+      color: var(--text-secondary);
+      padding: 40px 20px;
+      border-top: 1px solid #23282d;
+    }
+    
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/logodb.png" alt="Logo" class="logo-img me-2" />
+      Portal Multiserviços
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form action="https://www.google.com/search" method="get" class="search-form d-flex ms-3" target="_blank">
+      <input type="text" class="form-control form-control-sm" name="q" placeholder="Pesquisar no Google..." />
+      <button class="btn btn-light ms-2" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div style="height: 80px;"></div>
+<div class="container text-center mb-4">
+  <div class="d-flex justify-content-center gap-3 flex-wrap">
+    <a href="https://db3criptonotice.vercel.app/" target="_blank" class="btn btn-primary">
+      <i class="fas fa-newspaper me-2"></i> Notícias Cripto
+    </a>
+    <a href="https://cursotrade.vercel.app/" target="_blank" class="btn btn-primary">
+      <i class="fas fa-graduation-cap me-2"></i> Mini Curso Trade
+    </a>
+  </div>
+
+  <!-- Botão Bybit destacado -->
+  <div class="mt-4">
+    <a href="https://www.bybit.com/invite?ref=PMGKBQL" target="_blank"
+       class="btn btn-warning btn-lg fw-bold shadow-lg">
+      🚀 Bybit — A Melhor Corretora Cripto!
+    </a>
+  </div>
+</div>
+  <div class="row mt-4">
+    <!-- Db3trade Pro -->
+    <div class="col-md-6 mb-4">
+      <div class="service-card p-4 text-center">
+        <h3>🚀 Db3trade Pro — Simples e Eficiente</h3>
+        <p>Ideal para quem busca praticidade e agilidade em mercados laterais e de curto prazo.</p>
+        <ul class="text-start">
+          <li><i class="fas fa-check me-2"></i> Estratégia principal: <strong>Grid Scalping</strong> para mercados laterais</li>
+          <li><i class="fas fa-check me-2"></i> Stop-Loss automático (proteção contra quedas)</li>
+          <li><i class="fas fa-check me-2"></i> Take-Profit inteligente (+1.5% de lucro)</li>
+          <li><i class="fas fa-check me-2"></i> Indicadores técnicos: RSI, Médias Móveis (MA/EMA)</li>
+          <li><i class="fas fa-check me-2"></i> Configuração rápida e intuitiva</li>
+          <li><i class="fas fa-check me-2"></i> Operações automatizadas com baixo consumo de recursos</li>
+          <li><i class="fas fa-check me-2"></i> Código aberto e auditável</li>
+        </ul>
+        <h4 class="mt-3">💰 Investimento: R$320,00</h4>
+        <a href="#contato" class="btn btn-primary mt-3">Quero o Db3trade Pro</a>
+      </div>
+    </div>
+    <!-- Db3trade Plus -->
+    <div class="col-md-6 mb-4">
+      <div class="service-card p-4 text-center">
+        <h3>⚙️ Db3trade Plus — Completo e Avançado</h3>
+        <p>Para quem deseja recursos avançados e máxima personalização.</p>
+        <ul class="text-start">
+          <li><i class="fas fa-check me-2"></i> Estratégias avançadas com indicadores técnicos (RSI, MACD, EMAs, ATR)</li>
+          <li><i class="fas fa-check me-2"></i> Painel completo por ativo com lógica específica</li>
+          <li><i class="fas fa-check me-2"></i> Gestão de risco embutida e controle de posições</li>
+          <li><i class="fas fa-check me-2"></i> Modo simulado e real para testes e operações</li>
+          <li><i class="fas fa-check me-2"></i> Código aberto e sem coleta de dados do usuário</li>
+        </ul>
+        <h4 class="mt-3">💰 Investimento: R$510,00</h4>
+        <a href="#contato" class="btn btn-primary mt-3">Quero o Db3trade Plus</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Tabela comparativa -->
+  <div class="table-responsive mt-5">
+    <table class="table table-dark table-striped text-center align-middle">
+      <thead>
+        <tr>
+          <th>Recursos</th>
+          <th>Db3trade Pro (R$300)</th>
+          <th>Db3trade Plus (R$500)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estratégias</td>
+          <td>Grid Scalping, Stop-Loss, Take-Profit, RSI, MA/EMA</td>
+          <td>Avançadas (RSI, MACD, EMAs, ATR)</td>
+        </tr>
+        <tr>
+          <td>Configuração</td>
+          <td>Rápida e intuitiva</td>
+          <td>Personalizável e detalhada</td>
+        </tr>
+        <tr>
+          <td>Gestão de risco</td>
+          <td>Stop-Loss simples e Take-Profit fixo</td>
+          <td>Gestão completa com controle de posições</td>
+        </tr>
+        <tr>
+          <td>Modo simulado</td>
+          <td>Não disponível</td>
+          <td>Disponível</td>
+        </tr>
+        <tr>
+          <td>Privacidade</td>
+          <td>Código aberto, sem coleta de dados</td>
+          <td>Código aberto, sem coleta de dados</td>
+        </tr>
+        <tr>
+          <td>Ação</td>
+          <td><a href="#contato" class="btn btn-primary">Comprar Db3trade Pro</a></td>
+          <td><a href="#contato" class="btn btn-primary">Comprar Db3trade Plus</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="text-center mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Portal - Db3center</h5>
+        <p>Soluções para seu Negócio</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Redes Sociais</h5>
+        <p><a href="https://www.instagram.com/db3market/" target="_blank">Siga-nos no Instagram</a></p>
+        <a href="https://wa.me/5541991939310?text=Bem%20vindo%20a%20Db3center" class="btn btn-outline-primary">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
