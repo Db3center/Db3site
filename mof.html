@@ -3,173 +3,265 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mentoria On Fire</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Mentoria On Fire – Vendas online sem aparecer</title>
+  <meta name="description" content="Aprenda a vender na internet com estratégias práticas, sem precisar aparecer, com suporte e garantia." />
   <style>
-    :root {
-      --bg-dark: #181c1f;
-      --card-dark: #23282d;
-      --primary-blue: #ca940f; 
-      --primary-blue-dark: #007bff;
-      --text-main: #f0f4f8;
-      --text-secondary: #a5b1c2;
+    :root{
+      --brand:#ff4a1f;
+      --brand-dark:#c43a18;
+      --bg:#0e0f12;
+      --card:#16181d;
+      --text:#f4f6f8;
+      --muted:#99a1aa;
+      --ok:#28c76f;
+      --warn:#fbbc05;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
     }
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Segoe UI', sans-serif;
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg); color:var(--text); line-height:1.6;
     }
-    .navbar {
-      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    a{color:var(--brand); text-decoration:none}
+    header{
+      background:linear-gradient(135deg, #1a1d22 0%, #111317 60%), url('') center/cover no-repeat;
+      padding:64px 24px; text-align:center; border-bottom:1px solid #22252b;
     }
-    .navbar-brand {
-      font-weight: bold;
-      color: white;
+    .container{max-width:1080px; margin:0 auto; padding:0 24px}
+    .hero-title{font-size:38px; margin:0 0 12px}
+    .hero-sub{font-size:18px; color:var(--muted); margin:0 0 28px}
+    .label{display:inline-block; padding:6px 12px; border-radius:999px; background:#1f2228; color:var(--ok); font-weight:600; margin-bottom:16px}
+    .cta-group{display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 18px; border-radius:10px; border:1px solid #2a2e35;
+      color:var(--text); background:#1a1d22; box-shadow:var(--shadow); font-weight:700;
+      transition:.2s transform, .2s background, .2s border-color;
     }
-    .logo-img {
-      height: 40px;
+    .btn:hover{transform:translateY(-2px); border-color:#3a3f47}
+    .btn-primary{background:var(--brand); border-color:var(--brand); color:#fff}
+    .btn-primary:hover{background:var(--brand-dark); border-color:var(--brand-dark)}
+    .btn-ghost{background:#121418; color:#fff}
+    .grid{display:grid; gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){
+      .grid-3,.grid-2{grid-template-columns:1fr}
+      .hero-title{font-size:30px}
     }
-    .nav-link {
-      color: white !important;
+    section{padding:54px 0; border-bottom:1px solid #22252b}
+    .card{
+      background:var(--card); border:1px solid #22252b; border-radius:14px; padding:20px;
+      box-shadow:var(--shadow)
     }
-    .nav-link:hover {
-      color: var(--text-main) !important;
+    h2{margin:0 0 18px; font-size:26px}
+    h3{margin:0 0 12px; font-size:18px}
+    .muted{color:var(--muted)}
+    .list{display:grid; gap:10px; margin:0; padding:0; list-style:none}
+    .list li{display:flex; gap:10px; align-items:flex-start}
+    .badge{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid #2a2e35; border-radius:999px; background:#14171c; color:#e8eaed; font-weight:600}
+    .price{
+      font-size:32px; font-weight:800; margin:8px 0;
     }
-    section {
-      padding: 60px 20px;
-    }
-    h2 {
-      color: var(--primary-blue);
-      margin-bottom: 30px;
-      text-align: center;
-    }
-    .service-card {
-      background-color: var(--card-dark);
-      color: var(--text-main);
-      border: 1px solid #22272c;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-      transition: transform 0.3s ease, box-shadow 0.3s;
-      text-align: center;
-      padding: 30px;
-      height: 100%;
-    }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
-    }
-    .service-card i {
-      font-size: 2.5em;
-      margin-bottom: 15px;
-      color: var(--primary-blue);
-    }
-    .btn-primary {
-      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
-      border: none;
-    }
-    .btn-primary:hover {
-      background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
-    }
-    footer {
-      background-color: #20262a;
-      color: var(--text-secondary);
-      padding: 40px 20px;
-      border-top: 1px solid #23282d;
-    }
-    .lead-form {
-      background-color: var(--card-dark);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-    }
-    .form-control {
-      background-color: #2a2f34;
-      border: none;
-      color: var(--text-main);
-    }
-    .form-control:focus {
-      background-color: #2a2f34;
-      color: var(--text-main);
-      box-shadow: 0 0 0 0.2rem rgba(202,148,15,0.25);
-    }
-    label {
-      color: var(--text-secondary);
-    }
+    .strike{color:#7b818a; text-decoration:line-through; font-weight:600}
+    .highlight{color:var(--warn); font-weight:700}
+    .faq-item{background:#14171c; border:1px solid #22252b; border-radius:12px; padding:16px}
+    footer{padding:28px 0; text-align:center; color:var(--muted)}
+    .check{color:var(--ok); font-weight:900}
+    .star{color:#ffd54f; font-size:18px}
+    .tag{display:inline-block; background:#16202a; color:#a6c8ff; border:1px solid #2a3a46; padding:6px 10px; border-radius:999px; font-weight:700}
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="/logodb.png" alt="Logo" class="logo-img me-2" />
-      Mentoria On Fire
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#metodo">Método</a></li>
-        <li class="nav-item"><a class="nav-link" href="#bonus">Bônus</a></li>
-        <li class="nav-item"><a class="nav-link" href="#cta">Inscreva-se</a></li>
-      </ul>
+  <!-- HERO -->
+  <header>
+    <div class="container">
+      <div class="label">Treinamento prático • Sem precisar aparecer</div>
+      <h1 class="hero-title">Mentoria On Fire</h1>
+      <p class="hero-sub">Aprenda a vender online com estratégias replicáveis e suporte próximo, mesmo começando do zero.</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://pay.kiwify.com.br/xT3nTZE?afid=JpVqxKi9" target="_blank" rel="noopener noreferrer">Quero garantir minha vaga</a>
+        <a class="btn btn-ghost" href="#conteudo">Ver o conteúdo completo</a>
+      </div>
+      <div style="margin-top:16px">
+        <span class="badge">Preço especial: <span class="strike">R$ 997</span> → <strong>R$ 497</strong> ou <strong>12x de R$ 49,90</strong></span>
+      </div>
     </div>
-  </div>
-</nav>
+  </header>
 
-<!-- Hero Section -->
-<section id="inicio" class="text-center">
-  <div class="container">
-    <h1 class="mb-4">🔥 Mentoria On Fire 🔥</h1>
-    <p class="lead">A primeira venda é apenas a faísca. Mas o que você realmente precisa é de uma estrutura que transforme essa faísca em uma chama que nunca apaga.</p>
-    <a href="#cta" class="btn btn-primary btn-lg mt-4">Acenda sua chama milionária</a>
-  </div>
-</section>
+  <main>
 
-<!-- Método -->
-<section id="metodo">
-  <div class="container">
-    <h2>Revelação do Método</h2>
-    <div class="service-card">
-      <i class="fas fa-box-open"></i>
-      <p>Pela primeira vez, nós vamos abrir a caixa preta. O método exato que os maiores players usam para vender todos os dias. Você terá acesso a produtos ocultos e ferramentas de espionagem que encontram o lucro em tempo real.</p>
+    <!-- PARA QUEM É -->
+    <section id="publico">
+      <div class="container grid grid-3">
+        <div class="card">
+          <h3>Para iniciantes</h3>
+          <p class="muted">Se você nunca vendeu online ou está travado nos primeiros passos, o método guia cada etapa, sem tecnês.</p>
+        </div>
+        <div class="card">
+          <h3>Para CLT/estudantes</h3>
+          <p class="muted">Processos enxutos para quem tem pouco tempo. Foco em rotinas viáveis, com 1h/dia já dá para evoluir.</p>
+        </div>
+        <div class="card">
+          <h3>Para tímidos</h3>
+          <p class="muted">Não precisa aparecer. Estratégias de vendas automáticas e semi-automáticas sem depender de criar conteúdo público.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios">
+      <div class="container">
+        <h2>O que você vai conquistar</h2>
+        <div class="grid grid-3" style="margin-top:18px">
+          <div class="card">
+            <h3>Estratégias comprovadas</h3>
+            <p class="muted">Modelos usados por players do mercado, adaptados para você implementar com rapidez e segurança.</p>
+          </div>
+          <div class="card">
+            <h3>Suporte próximo</h3>
+            <p class="muted">Acompanhamento em grupo para tirar dúvidas, destravar gargalos e manter consistência nos resultados.</p>
+          </div>
+          <div class="card">
+            <h3>Processos replicáveis</h3>
+            <p class="muted">Passo a passo objetivo, com checklists e rotinas que você pode repetir e escalar ao longo das semanas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE INCLUI -->
+    <section id="inclui">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2>Dentro da mentoria</h2>
+          <ul class="list">
+            <li><span class="check">✓</span> Área de membros com aulas práticas</li>
+            <li><span class="check">✓</span> Suporte e comunidade</li>
+            <li><span class="check">✓</span> Materiais e scripts prontos</li>
+            <li><span class="check">✓</span> Acesso a estratégias de vendas automáticas</li>
+            <li><span class="check">✓</span> Atualizações e novos conteúdos</li>
+          </ul>
+          <div class="cta-group" style="margin-top:16px">
+            <a class="btn btn-primary" href="https://pay.kiwify.com.br/xT3nTZE?afid=JpVqxKi9" target="_blank" rel="noopener noreferrer">Quero entrar agora</a>
+          </div>
+        </div>
+        <div class="card" id="conteudo">
+          <h2>Módulos principais</h2>
+          <ul class="list">
+            <li><strong>Mindset e planejamento:</strong> objetivos, metas e rota clara.</li>
+            <li><strong>Fundamentos de oferta:</strong> produto, promessa e posicionamento.</li>
+            <li><strong>Automação:</strong> funis e rotinas sem aparecer.</li>
+            <li><strong>Tráfego:</strong> básico ao avançado, com orçamento enxuto.</li>
+            <li><strong>Escala:</strong> métricas, otimização e multiplicação de campanhas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROVA SOCIAL -->
+    <section id="provas">
+      <div class="container">
+        <h2>Resultados e feedbacks</h2>
+        <div class="grid grid-3" style="margin-top:18px">
+          <div class="card">
+            <div class="star">★★★★★</div>
+            <p class="muted">“Segui o passo a passo, rodei duas campanhas e fiz as primeiras vendas sem aparecer.”</p>
+            <div class="tag">Afiliado iniciante</div>
+          </div>
+          <div class="card">
+            <div class="star">★★★★★</div>
+            <p class="muted">“Com pouco tempo livre, foquei nas rotinas e mantive consistência. Voltou a vender.”</p>
+            <div class="tag">CLT • Noite</div>
+          </div>
+          <div class="card">
+            <div class="star">★★★★★</div>
+            <p class="muted">“Os modelos prontos economizam muito tempo. É literalmente replicar e ajustar.”</p>
+            <div class="tag">Gestor de tráfego</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFERTA -->
+    <section id="oferta">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2>Oferta atual</h2>
+          <p class="muted">Vagas limitadas para manter a qualidade de suporte e acompanhamento.</p>
+          <p class="price"><span class="strike">R$ 997</span> → <strong>R$ 497</strong></p>
+          <p class="muted">ou <strong>12x de R$ 49,90</strong> no cartão</p>
+          <ul class="list" style="margin-top:10px">
+            <li><span class="check">✓</span> Garantia incondicional de 7 dias</li>
+            <li><span class="check">✓</span> Se aplicar e não evoluir, garantia estendida* (*consulte termos)</li>
+            <li><span class="check">✓</span> Acesso imediato à área de membros</li>
+          </ul>
+          <div class="cta-group" style="margin-top:16px">
+            <a class="btn btn-primary" href="https://pay.kiwify.com.br/xT3nTZE?afid=JpVqxKi9" target="_blank" rel="noopener noreferrer">Garantir minha vaga</a>
+            <a class="btn" href="#faq">Tirar dúvidas</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Bônus de inscrição</h2>
+          <ul class="list">
+            <li><span class="check">✓</span> Checklist de implementação rápida</li>
+            <li><span class="check">✓</span> Modelos de copy para páginas e anúncios</li>
+            <li><span class="check">✓</span> Rotina de 1h/dia para iniciantes</li>
+            <li><span class="check">✓</span> Templates de funil semi-automático</li>
+          </ul>
+          <p class="muted" style="margin-top:10px">Bônus disponíveis enquanto durar a oferta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+        <div class="grid grid-2" style="margin-top:18px">
+          <div class="faq-item">
+            <h3>Preciso aparecer?</h3>
+            <p class="muted">Não. O método foca em vendas automáticas e semi-automáticas sem exposição pessoal.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Funciona para iniciantes?</h3>
+            <p class="muted">Sim. Os módulos começam do básico e evoluem para estratégias mais avançadas.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Qual a carga horária?</h3>
+            <p class="muted">Você avança no seu ritmo. Há rotinas sugeridas para 1h/dia e planos de escala.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Por quanto tempo terei acesso?</h3>
+            <p class="muted">Acesso contínuo durante o período da mentoria, com atualizações e novos conteúdos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section id="cta-final">
+      <div class="container" style="text-align:center">
+        <h2>Pronto para destravar suas vendas?</h2>
+        <p class="muted">Entre agora, siga o passo a passo e implemente as rotinas com suporte.</p>
+        <div class="cta-group" style="margin-top:12px; justify-content:center">
+          <a class="btn btn-primary" href="https://pay.kiwify.com.br/xT3nTZE?afid=JpVqxKi9" target="_blank" rel="noopener noreferrer">Quero começar agora</a>
+          <a class="btn" href="#beneficios">Ver benefícios</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Garantia de 7 dias. Sem risco.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© Mentoria On Fire. Todos os direitos reservados.</p>
+      <p><a href="https://pay.kiwify.com.br/xT3nTZE?afid=JpVqxKi9" target="_blank" rel="noopener noreferrer">Checkout oficial</a> • <a href="#faq">FAQ</a></p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- Ecossistema -->
-<section id="bonus">
-  <div class="container">
-    <h2>O Ecossistema On Fire</h2>
-    <div class="service-card">
-      <i class="fas fa-fire"></i>
-      <p>Na Mentoria On Fire, você não caminha sozinho. Você terá o apoio de gestores de tráfego particulares analisando suas campanhas ao vivo, suporte exclusivo e estratégias de inteligência artificial com o ChatGPT para acelerar seus resultados.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Lead Capture Form -->
-<section id="cta" class="text-center">
-  <div class="container">
-    <h2>Garanta sua Vaga</h2>
-    <a href="https://pay.kiwify.com.br/xT3nTZE?src=pv&utm_source=portal&utm_medium=button&utm_campaign=mentoria_onfire"
-       class="btn btn-primary btn-lg w-100"
-       target="_blank">
-       Quero Participar
-    </a>
-  </div>
-</section>
-
-
-<footer class="text-center">
-  <p>&copy; 2025 Mentoria On Fire. Todos os direitos reservados.</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
