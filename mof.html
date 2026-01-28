@@ -10,6 +10,23 @@
 
   gtag('config', 'AW-565522669');
 </script>
+  <!-- Event snippet for Clique de saída conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-565522669/WMvmCNDMtu4bEO3h1I0C',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentoria On Fire – Vendas online sem aparecer</title>
