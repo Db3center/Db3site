@@ -20,6 +20,7 @@
       background-color: var(--bg-dark);
       color: var(--text-main);
       font-family: 'Segoe UI', sans-serif;
+      padding-top: 80px; /* espaço para o navbar fixo */
     }
     .navbar {
       background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
@@ -29,49 +30,59 @@
       font-weight: bold;
       color: white;
     }
-    .logo-img {
-      height: 40px;
-    }
-    .nav-link {
-      color: white !important;
-    }
-    .nav-link:hover {
-      color: var(--text-main) !important;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    h2 {
-      color: var(--primary-blue);
-      margin-bottom: 30px;
+    .logo-img {height: 40px;}
+    .nav-link {color: white !important;}
+    .nav-link:hover {color: var(--text-main) !important;}
+    .ebook-banner {
+      padding: 40px 20px;
       text-align: center;
-    }
-    .ebook-card {
-      background-color: var(--card-dark);
-      color: var(--text-main);
-      border: 1px solid #22272c;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-      transition: transform 0.3s ease, box-shadow 0.3s;
-      text-align: center;
-      padding: 30px;
-      height: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      margin-bottom: 30px;
     }
-    .ebook-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
-    }
-    .ebook-card i {
-      font-size: 2.5em;
-      margin-bottom: 15px;
-      color: var(--primary-blue);
-    }
+    .ebook-banner h1 {font-size: 1.8rem;font-weight:bold;}
+    .ebook-banner p {font-size: 1rem;}
     .btn-primary {
       background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
       border: none;
     }
     .btn-primary:hover {
       background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
+    }
+    /* Seção "O que você vai aprender" */
+    .learn-section {
+      background: var(--card-dark);
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      margin-top: 20px;
+    }
+    .learn-section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--primary-blue);
+    }
+    .learn-list {
+      list-style: none;
+      padding: 0;
+    }
+    .learn-list li {
+      display: flex;
+      align-items: center;
+      background: #20262a;
+      margin-bottom: 12px;
+      padding: 12px;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .learn-list li:hover {
+      transform: translateX(5px);
+      background: #2a3138;
+    }
+    .learn-list i {
+      font-size: 1.3rem;
+      color: var(--primary-blue);
+      margin-right: 12px;
     }
     footer {
       background-color: #20262a;
@@ -81,9 +92,7 @@
     }
   </style>
 </head>
-  
 <body>
-
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="/">
@@ -103,53 +112,62 @@
   </div>
 </nav>
 
-<section id="ebooks" class="container mt-5 pt-5">
+<section id="ebooks" class="container mt-5 pt-3">
   <h2>📚 Nossos E-books Exclusivos</h2>
   <div class="row g-4">
     <!-- E-book 1 -->
     <div class="col-md-4">
-      <div class="ebook-card">
-        <i class="fas fa-lightbulb"></i>
-        <h3>Método 21x1</h3>
-        <p>Aprenda a estratégia única que multiplica resultados com foco e disciplina.</p>
-        <a href="ebook21x1.html" class="btn btn-primary mt-3">Acessar</a>
+      <div class="ebook-banner" style="background:linear-gradient(90deg,#ffcc00,#ff9900);">
+        <h1>📘 Método 21x1</h1>
+        <p>Crie um único hábito que puxa todos os outros e transforme sua rotina em apenas 21 dias.</p>
+        <a href="ebook21x1.html" class="btn btn-primary btn-lg mt-3">Baixar Agora</a>
+      </div>
+      <div class="learn-section">
+        <h3>✨ O que você vai aprender</h3>
+        <ul class="learn-list">
+          <li><i class="fas fa-key"></i> Identificar seu <strong>hábito mestre</strong></li>
+          <li><i class="fas fa-times-circle"></i> Por que vários hábitos ao mesmo tempo falham</li>
+          <li><i class="fas fa-calendar-check"></i> Plano prático de <strong>21 dias</strong></li>
+        </ul>
       </div>
     </div>
     <!-- E-book 2 -->
     <div class="col-md-4">
-      <div class="ebook-card">
-        <i class="fas fa-robot"></i>
-        <h3>IA: Uma ferramenta poderosa e acessível</h3>
+      <div class="ebook-banner" style="background:linear-gradient(90deg,#00c6ff,#0072ff);">
+        <h1>🤖 IA: Uma ferramenta poderosa</h1>
         <p>Descubra como a inteligência artificial pode transformar seu negócio e sua rotina.</p>
-        <a href="ebookIA.html" class="btn btn-primary mt-3">Acessar</a>
+        <a href="ebookIA.html" class="btn btn-primary btn-lg mt-3">Baixar Agora</a>
+      </div>
+      <div class="learn-section">
+        <h3>✨ O que você vai aprender</h3>
+        <ul class="learn-list">
+          <li><i class="fas fa-robot"></i> Aplicações práticas da IA</li>
+          <li><i class="fas fa-lightbulb"></i> Como criar prompts eficazes</li>
+          <li><i class="fas fa-shield-alt"></i> Cuidados éticos e boas práticas</li>
+        </ul>
       </div>
     </div>
     <!-- E-book 3 -->
     <div class="col-md-4">
-      <div class="ebook-card">
-        <i class="fas fa-chart-line"></i>
-        <h3>Guia prático para investir em ações</h3>
+      <div class="ebook-banner" style="background:linear-gradient(90deg,#4caf50,#2e7d32);">
+        <h1>📈 Investir em Ações</h1>
         <p>Entenda os fundamentos e aprenda a investir com segurança no mercado de ações.</p>
-        <a href="ebookAcoes.html" class="btn btn-primary mt-3">Saiba Mais</a>
+        <a href="ebookAcoes.html" class="btn btn-primary btn-lg mt-3">Baixar Agora</a>
+      </div>
+      <div class="learn-section">
+        <h3>✨ O que você vai aprender</h3>
+        <ul class="learn-list">
+          <li><i class="fas fa-university"></i> Fundamentos sem “economês”</li>
+          <li><i class="fas fa-building"></i> Como escolher boas empresas</li>
+          <li><i class="fas fa-coins"></i> O poder dos dividendos</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="text-center mt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <h5>Portal - Db3center</h5>
-        <p>Soluções para seu Negócio</p>
-      </div>
-      <div class="col-md-6 text-md-end">
-        <h5>Redes Sociais</h5>
-        <p><a href="https://www.instagram.com/db3market/" target="_blank">Siga-nos no Instagram</a></p>
-        <a href="https://wa.me/5541991939310?text=Bem%20vindo%20a%20Db3center" class="btn btn-outline-primary">WhatsApp</a>
-      </div>
-    </div>
-  </div>
+<footer class="text-center mt-5 p-4 bg-dark text-secondary">
+  <p>Portal Db3center - Soluções para seu Negócio</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
