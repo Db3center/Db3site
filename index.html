@@ -2,14 +2,13 @@
 <html lang="pt-BR">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-565522669"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-565522669');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-565522669"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-565522669');
+  </script>
   
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,27 +34,12 @@
       background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    .navbar-brand {
-      font-weight: bold;
-      color: white;
-    }
-    .logo-img {
-      height: 40px;
-    }
-    .nav-link {
-      color: white !important;
-    }
-    .nav-link:hover {
-      color: var(--text-main) !important;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    h2 {
-      color: var(--primary-blue);
-      margin-bottom: 30px;
-      text-align: center;
-    }
+    .navbar-brand {font-weight: bold;color: white;}
+    .logo-img {height: 40px;}
+    .nav-link {color: white !important;}
+    .nav-link:hover {color: var(--text-main) !important;}
+    section {padding: 60px 20px;}
+    h2 {color: var(--primary-blue);margin-bottom: 30px;text-align: center;}
     .service-card {
       background-color: var(--card-dark);
       color: var(--text-main);
@@ -67,22 +51,13 @@
       padding: 30px;
       height: 100%;
     }
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(43,210,255,0.08);
-    }
-    .service-card i {
-      font-size: 2.5em;
-      margin-bottom: 15px;
-      color: var(--primary-blue);
-    }
+    .service-card:hover {transform: translateY(-5px);box-shadow: 0 8px 20px rgba(43,210,255,0.08);}
+    .service-card i {font-size: 2.5em;margin-bottom: 15px;color: var(--primary-blue);}
     .btn-primary {
       background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
       border: none;
     }
-    .btn-primary:hover {
-      background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));
-    }
+    .btn-primary:hover {background: linear-gradient(90deg, var(--primary-blue-dark), var(--primary-blue));}
     footer {
       background-color: #20262a;
       color: var(--text-secondary);
@@ -91,7 +66,6 @@
     }
   </style>
 </head>
-  
 <body>
 
 <nav class="navbar navbar-expand-lg fixed-top">
@@ -118,40 +92,31 @@
 <section id="services" class="container mt-5 pt-5">
   <h2>🌐 Explore Nossas Seções</h2>
   <div class="row g-4">
-    <!-- Criptomoedas -->
-    <div class="col-md-6 col-lg-3">
+    <!-- Investimentos & Crypto -->
+    <div class="col-md-4">
       <div class="service-card">
-        <i class="fas fa-chart-line"></i>
-        <h3>Criptomoedas</h3>
-        <p>Automação para Cripto — modo real e simulado!</p>
+        <i class="fas fa-coins"></i>
+        <h3>Investimentos & Crypto</h3>
+        <p>Automação para Cripto e estratégias de investimento — modo real e simulado!</p>
         <a href="/crypto.html" class="btn btn-primary mt-3">Saiba Mais</a>
       </div>
     </div>
     <!-- Ferramentas -->
-    <div class="col-md-6 col-lg-3">
+    <div class="col-md-4">
       <div class="service-card">
         <i class="fas fa-tools"></i>
         <h3>Ferramentas</h3>
-        <p>Segurança, Marketing e E-books - Conheça nossas ferramentas</p>
+        <p>Segurança, Marketing e soluções digitais — conheça nossas ferramentas.</p>
         <a href="/ferramentas.html" class="btn btn-primary mt-3">Acesse</a>
       </div>
     </div>
-    <!-- Mentoria On Fire -->
-    <div class="col-md-6 col-lg-3">
+    <!-- E-books -->
+    <div class="col-md-4">
       <div class="service-card">
-        <i class="fas fa-fire"></i>
-        <h3>Mentoria On Fire</h3>
-        <p>Aprenda o método oculto que grandes players usam para vender todos os dias, com suporte e inteligência artificial.</p>
-        <a href="/mof.html" class="btn btn-primary mt-3">Participar</a>
-      </div>
-    </div>
-    <!-- ZapTurboMax -->
-    <div class="col-md-6 col-lg-3">
-      <div class="service-card">
-        <i class="fas fa-robot"></i>
-        <h3>ZapTurboMax</h3>
-        <p>Automatize suas vendas no WhatsApp com envios em massa, tecnologia anti-bloqueio e resultados reais.</p>
-        <a href="/zapturbo.html" class="btn btn-primary mt-3" target="_blank">Saiba Mais</a>
+        <i class="fas fa-book"></i>
+        <h3>E-books</h3>
+        <p>Guias práticos e exclusivos para transformar sua rotina e seus negócios.</p>
+        <a href="/ebooks.html" class="btn btn-primary mt-3">Explorar</a>
       </div>
     </div>
   </div>
