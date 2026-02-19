@@ -25,86 +25,93 @@
     --primary-blue-dark: #007bff;
     --text-main: #f0f4f8;
   }
+
   body{
     margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
     background:var(--bg); color:var(--text); line-height:1.6;
   }
+
   a{color:var(--brand); text-decoration:none}
-  h1,h2,h3,h4,h5,h6{
-    color:#ffffff; /* títulos bem claros */
+
+  /* Navbar */
+  .navbar {
+    background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
+  .navbar-brand {font-weight: bold;color: #fff;}
+  .logo-img {height: 40px;}
+  .nav-link {color: #fff !important;}
+  .nav-link:hover {color: #e0e0e0 !important;}
+
+  /* Hero */
+  header{
+    background:linear-gradient(135deg, #1a1d22 0%, #111317 60%);
+    padding:64px 24px; text-align:center; border-bottom:1px solid #22252b;
+  }
+  .hero-title{font-size:38px; margin:0 0 12px; color:#fff;}
+  .hero-sub{font-size:18px; color:#d1d5db; margin:0 0 28px}
+  .label{display:inline-block; padding:6px 12px; border-radius:999px; background:#1f2228; color:var(--ok); font-weight:600; margin-bottom:16px}
+
+  /* Botões */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:14px 18px; border-radius:10px; border:1px solid #2a2e35;
+    color:#fff; background:#1a1d22; box-shadow:var(--shadow); font-weight:700;
+    transition:.2s transform, .2s background, .2s border-color;
+  }
+  .btn:hover{transform:translateY(-2px); border-color:#3a3f47}
+  .btn-primary{background:var(--brand); border-color:var(--brand); color:#fff}
+  .btn-primary:hover{background:var(--brand-dark); border-color:var(--brand-dark)}
+  .btn-ghost{background:#121418; color:#fff}
+
+  /* Grid */
+  .grid{display:grid; gap:18px}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  @media (max-width:900px){
+    .grid-3,.grid-2{grid-template-columns:1fr}
+    .hero-title{font-size:30px}
+  }
+
+  section{padding:54px 0; border-bottom:1px solid #22252b}
+
+  /* Cards */
+  .card{
+    background:var(--card); border:1px solid #22252b; border-radius:14px; padding:20px;
+    box-shadow:var(--shadow); color:#f9fafb;
+  }
+
+  /* Títulos */
+  h2{margin:0 0 18px; font-size:26px; color:#fff;}
+  h3{margin:0 0 12px; font-size:18px; color:#fff;}
+
+  /* Texto secundário */
   .muted{color:var(--muted)}
-  .navbar-brand {color:#fff;}
-  .nav-link {color:#fff !important;}
-  .nav-link:hover {color:#e0e0e0 !important;}
-  .hero-title{color:#fff;}
-  .hero-sub{color:#d1d5db;} /* subtítulo mais claro */
-  .card{color:#f9fafb;} /* texto dentro dos cards mais claro */
+
+  /* Listas */
+  .list{display:grid; gap:10px; margin:0; padding:0; list-style:none}
+  .list li{display:flex; gap:10px; align-items:flex-start}
+
+  /* Badge */
+  .badge{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid #2a2e35; border-radius:999px; background:#14171c; color:#fff; font-weight:600}
+
+  /* Preço */
+  .price{font-size:32px; font-weight:800; margin:8px 0; color:#fff;}
+  .strike{color:#b0b6bd; text-decoration:line-through; font-weight:600}
+  .highlight{color:var(--warn); font-weight:700}
+
+  /* FAQ */
+  .faq-item{background:#14171c; border:1px solid #22252b; border-radius:12px; padding:16px; color:#f9fafb;}
   .faq-item h3{color:#fff;}
   .faq-item p{color:#d1d5db;}
-  .navbar {
-      background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    .navbar-brand {
-      font-weight: bold;
-      color: white;
-    }
-    .logo-img {
-      height: 40px;
-    }
-    .nav-link {
-      color: white !important;
-    }
-    .nav-link:hover {
-      color: var(--text-main) !important;
-    }
-    header{
-      background:linear-gradient(135deg, #1a1d22 0%, #111317 60%);
-      padding:64px 24px; text-align:center; border-bottom:1px solid #22252b;
-    }
-    .container{max-width:1080px; margin:0 auto; padding:0 24px}
-    .hero-title{font-size:38px; margin:0 0 12px}
-    .hero-sub{font-size:18px; color:var(--muted); margin:0 0 28px}
-    .label{display:inline-block; padding:6px 12px; border-radius:999px; background:#1f2228; color:var(--ok); font-weight:600; margin-bottom:16px}
-    .cta-group{display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding:14px 18px; border-radius:10px; border:1px solid #2a2e35;
-      color:var(--text); background:#1a1d22; box-shadow:var(--shadow); font-weight:700;
-      transition:.2s transform, .2s background, .2s border-color;
-    }
-    .btn:hover{transform:translateY(-2px); border-color:#3a3f47}
-    .btn-primary{background:var(--brand); border-color:var(--brand); color:#fff}
-    .btn-primary:hover{background:var(--brand-dark); border-color:var(--brand-dark)}
-    .btn-ghost{background:#121418; color:#fff}
-    .grid{display:grid; gap:18px}
-    .grid-3{grid-template-columns:repeat(3,1fr)}
-    .grid-2{grid-template-columns:repeat(2,1fr)}
-    @media (max-width:900px){
-      .grid-3,.grid-2{grid-template-columns:1fr}
-      .hero-title{font-size:30px}
-    }
-    section{padding:54px 0; border-bottom:1px solid #22252b}
-    .card{
-      background:var(--card); border:1px solid #22252b; border-radius:14px; padding:20px;
-      box-shadow:var(--shadow)
-    }
-    h2{margin:0 0 18px; font-size:26px}
-    h3{margin:0 0 12px; font-size:18px}
-    .muted{color:var(--muted)}
-    .list{display:grid; gap:10px; margin:0; padding:0; list-style:none}
-    .list li{display:flex; gap:10px; align-items:flex-start}
-    .badge{display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid #2a2e35; border-radius:999px; background:#14171c; color:#e8eaed; font-weight:600}
-    .price{font-size:32px; font-weight:800; margin:8px 0;}
-    .strike{color:#7b818a; text-decoration:line-through; font-weight:600}
-    .highlight{color:var(--warn); font-weight:700}
-    .faq-item{background:#14171c; border:1px solid #22252b; border-radius:12px; padding:16px}
-    footer{padding:28px 0; text-align:center; color:var(--muted)}
-    .check{color:var(--ok); font-weight:900}
-    .star{color:#ffd54f; font-size:18px}
-    .tag{display:inline-block; background:#16202a; color:#a6c8ff; border:1px solid #2a3a46; padding:6px 10px; border-radius:999px; font-weight:700}
-  </style>
+
+  /* Footer */
+  footer{padding:28px 0; text-align:center; color:#cfd4da}
+  .check{color:var(--ok); font-weight:900}
+  .star{color:#ffd54f; font-size:18px}
+  .tag{display:inline-block; background:#16202a; color:#a6c8ff; border:1px solid #2a3a46; padding:6px 10px; border-radius:999px; font-weight:700}
+</style>
+
 </head>
 <body>
   <!-- Navbar no mesmo estilo -->
