@@ -30,15 +30,24 @@
     .logo-img {height: 40px;}
     .nav-link {color: white !important;}
     .nav-link:hover {color: var(--text-main) !important;}
+    section {padding: 60px 20px;}
+    h2 {color: var(--primary-blue);margin-bottom: 30px;text-align: center;}
     .ebook-banner {
-      padding: 40px 20px;
-      text-align: center;
+      background-color: var(--card-dark);
+      color: var(--text-main);
+      border: 1px solid #22272c;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s;
     }
-    .ebook-banner h1 {font-size: 1.8rem;font-weight:bold;}
-    .ebook-banner p {font-size: 1rem;}
+    .ebook-banner:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(43,210,255,0.15);
+    }
+    .ebook-banner h1 {font-size: 1.6rem;font-weight:bold;color: var(--primary-blue);}
+    .ebook-banner p {font-size: 1rem;color: var(--text-secondary);}
     .btn-primary {
       background: linear-gradient(90deg, var(--primary-blue), var(--primary-blue-dark));
       border: none;
@@ -49,7 +58,7 @@
     .learn-section {
       background: var(--card-dark);
       border-radius: 12px;
-      padding: 25px;
+      padding: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.18);
       margin-top: 20px;
     }
@@ -90,13 +99,12 @@
 </head>
 <body>
 
-
 <section id="ebooks-paid" class="container mt-5 pt-3">
   <h2>💰 E-books Pagos</h2>
   <div class="row g-4">
     <!-- Método 21x1 -->
     <div class="col-md-4">
-      <div class="ebook-banner" style="background:linear-gradient(90deg,#ffcc00,#ff9900);">
+      <div class="ebook-banner">
         <h1>📘 Método 21x1</h1>
         <p>Crie um único hábito que puxa todos os outros e transforme sua rotina em apenas 21 dias.</p>
         <a href="https://buy.stripe.com/8x2dR90wU66SeP8fToew809" target="_blank" class="btn btn-primary btn-lg mt-3">Comprar - R$9,90</a>
@@ -112,7 +120,7 @@
     </div>
     <!-- IA: Uma ferramenta poderosa -->
     <div class="col-md-4">
-      <div class="ebook-banner" style="background:linear-gradient(90deg,#00c6ff,#0072ff);">
+      <div class="ebook-banner">
         <h1>🤖 IA: Uma ferramenta poderosa</h1>
         <p>Descubra como a inteligência artificial pode transformar seu negócio e sua rotina.</p>
         <a href="https://buy.stripe.com/eVq4gzgvSan8eP822yew808" target="_blank" class="btn btn-primary btn-lg mt-3">Comprar - R$19,90</a>
@@ -128,7 +136,7 @@
     </div>
     <!-- Método R.I.Q.U.E.Z.A. -->
     <div class="col-md-4">
-      <div class="ebook-banner" style="background:linear-gradient(90deg,#d4af37,#8b6f3d);">
+      <div class="ebook-banner">
         <h1>💎 Método R.I.Q.U.E.Z.A.</h1>
         <p>O guia prático para empreendedores que querem construir patrimônio e dar o primeiro passo como investidores.</p>
         <a href="https://riqueza-kappa.vercel.app/" target="_blank" class="btn btn-primary btn-lg mt-3">Comprar - R$27,90</a>
@@ -145,5 +153,13 @@
   </div>
 </section>
 
+<footer class="text-center mt-5">
+  <div class="container">
+    <p>Portal Multiserviços - Db3center © Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
