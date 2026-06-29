@@ -89,6 +89,30 @@
       box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
       color: #000;
     }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -127,6 +151,10 @@
   </section>
 
 </main>
+
+<a href="https://wa.me/5541999863940?text=Olá!%20Vim%20pelo%20site." class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
