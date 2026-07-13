@@ -9,6 +9,9 @@ on:
     branches:
       - Db3center
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
@@ -18,8 +21,6 @@ jobs:
       contents: write
       pull-requests: write
       deployments: write
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,10 +43,12 @@ jobs:
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     name: Close Pull Request Job
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    permissions:
+      contents: write
+      pull-requests: write
+      deployments: write
     steps:
       - name: Close Pull Request
         id: closepullrequest
