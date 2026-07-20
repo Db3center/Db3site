@@ -89,6 +89,30 @@
       box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
       color: #000;
     }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -104,7 +128,7 @@
           <div class="card-icon"><i class="fas fa-rocket"></i></div>
           <h3>Landing Pages</h3>
           <p class="text-secondary">Páginas de alta conversão focadas em transformar visitantes em clientes reais.</p>
-          <a href="https://wa.me/5541999863940?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20uma%20Landing%20Page." target="_blank" class="btn btn-custom btn-gold mt-auto">Solicitar Orçamento</a>
+          <a href="https://wa.me/5541999863940?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20uma%20Landing%20Page." target="_blank" class="btn btn-custom btn-gold mt-auto">Solicitar Orçamento via WhatsApp</a>
         </div>
       </div>
       <div class="col-md-4">
@@ -112,7 +136,7 @@
           <div class="card-icon"><i class="fas fa-globe"></i></div>
           <h3>Sites Institucionais</h3>
           <p class="text-secondary">Sua presença profissional na web com design moderno, responsivo e otimizado.</p>
-          <a href="https://wa.me/5541999863940?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20um%20Site%20Institucional." target="_blank" class="btn btn-custom btn-gold mt-auto">Solicitar Orçamento</a>
+          <a href="https://wa.me/5541999863940?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20um%20Site%20Institucional." target="_blank" class="btn btn-custom btn-gold mt-auto">Solicitar Orçamento via WhatsApp</a>
         </div>
       </div>
       <div class="col-md-4">
@@ -120,13 +144,17 @@
           <div class="card-icon"><i class="fas fa-code"></i></div>
           <h3>Aplicações Web</h3>
           <p class="text-secondary">Sistemas personalizados e aplicativos web para automatizar e escalar seu negócio.</p>
-          <a href="https://wa.me/5541999863940?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20uma%20Aplicação%20Web." target="_blank" class="btn btn-custom btn-gold mt-auto">Solicitar Orçamento</a>
+          <a href="https://wa.me/5541999863940?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20uma%20Aplicação%20Web." target="_blank" class="btn btn-custom btn-gold mt-auto">Solicitar Orçamento via WhatsApp</a>
         </div>
       </div>
     </div>
   </section>
 
 </main>
+
+<a href="https://wa.me/5541999863940?text=Olá!%20Vim%20pelo%20site%20DB3Nexus." class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
