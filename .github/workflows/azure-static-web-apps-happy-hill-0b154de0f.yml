@@ -12,11 +12,12 @@ on:
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     name: Build and Deploy Job
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
+      deployments: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
@@ -27,6 +28,7 @@ jobs:
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
+        if: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_HILL_0B154DE0F != '' }}
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_HILL_0B154DE0F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
@@ -41,7 +43,7 @@ jobs:
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     name: Close Pull Request Job
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -49,6 +51,7 @@ jobs:
       - name: Close Pull Request
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
+        if: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_HILL_0B154DE0F != '' }}
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_HILL_0B154DE0F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
